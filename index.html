@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.raty.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src='https://www.youtube.com/iframe_api'></script>
+    <script src="js/common.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <title>Psy Port</title>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header-logo">
+            <a href="#">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-list">
+                <label for="show-menu" class="show-menu"><!-- <span>Menu</span> --><div class="lines"></div></label>
+	            <input type="checkbox" id="show-menu">
+                <ul id="menu">
+                    <li><a href="#">Терапевты</a></li>
+                    <li><a href="#">Стать терапевтом</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="header-lang">
+                <div class="dropdown">
+                    <div class="dropbtn">Русский</div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Украинский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-regist">
+                <a href="#" class="popup-open-reg">Регистрация</a>
+                <div class="popup-fade-reg">
+                    <div class="popup-reg">
+                        <a class="popup-close-reg" href="#"><i class="fas fa-times"></i></a>
+                        <div class="popup-title">
+                            Регистрация
+                        </div>
+                        <form action="" class="register-form">
+                            <div class="register-form-item">
+                                <span>Ваше имя</span>
+                                <input type="text" name="" id="" placeholder="Имя">
+                            </div>
+                            <div class="register-form-item">
+                                <span>Номер телефона</span>
+                                <input type="text" name="" id="" placeholder="+380636363636">
+                            </div>
+                            <div class="register-form-item">
+                                <span>Электронная почта</span>
+                                <input type="text" name="" id="" placeholder="admin@gmail.com">
+                            </div>
+                            <div class="registr-button">
+                                <a href="#">Зарегистрироваться</a>
+                            </div>
+                        </form>
+                        <div class="social-reg">
+                            <span>Войти через соцсети</span>
+                            <div class="social-links">
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-vk"></i></a>
+                                </div>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-login">
+                <div class="header-login-btn">
+                    <a href="#" class="popup-open-log"><i class="fas fa-sign-in-alt"></i> Войти</a>
+                </div>
+                <div class="popup-fade-log">
+                    <div class="popup-log">
+                        <a class="popup-close-log" href="#"><i class="fas fa-times"></i></a>
+                        <div class="popup-title">
+                            Вход
+                        </div>
+                        <form action="" class="login-form">
+                            <div class="login-form-item">
+                                <span>Логин, почта или телефон</span>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="login-form-item">
+                                <span>Пароль</span>
+                                <input type="password" name="" id="">
+                            </div>
+
+                            <div class="registr-button">
+                                <a href="#">Войти</a>
+                            </div>
+                        </form>
+                        <div class="login-forgot-links">
+                            <a href="">Не помню пароль</a>
+                            <a href="">Войти по смс</a>
+                        </div>
+                        <div class="social-reg">
+                            <span>Войти через соцсети</span>
+                            <div class="social-links">
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-vk"></i></a>
+                                </div>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner container">
+        <div class="banner-text">
+            <div class="banner-text-title">
+                Грамотная помощь у проверенных терапевтов
+            </div>
+            <div class="banner-text-desc">
+                №1 в Русскоязычном сегменте для коммуникации психотерапевта и клиента
+            </div>
+        </div>
+        <div class="banner-img">
+            <img src="img/back-girl.png" alt="">
+        </div>
+    </section>
+    <section class="first-form container">
+        <form action="" method="post" class="first-form-item">
+
+            <div><span class="form-item-title">Для кого подбираете психотерапевта?</span>
+                <div class="first-form-checkbox">
+                    <input type="checkbox" class="custom-checkbox" name="" id="self">
+                    <label for="self">Для себя</label>
+
+                    <input type="checkbox" class="custom-checkbox" name="" id="couple">
+                    <label for="couple">Для пары</label>
+
+                    <input type="checkbox" class="custom-checkbox" name="" id="family">
+                    <label for="family">Для семьи</label>
+
+                    <input type="checkbox" class="custom-checkbox" name="" id="children">
+                    <label for="children">Для ребенка</label>
+                </div>
+            </div>
+            <div><span class="form-item-title">Укажите язык</span>
+                <div class="first-form-radio custom-label">
+
+                    <input type="radio" name="lang" id="rus">
+                    <label for="rus">Русский</label>
+
+                    <input type="radio" name="lang" id="ukr">
+                    <label for="ukr">Українська</label>
+
+                    <input type="radio" name="lang" id="eng">
+                    <label for="eng">English</label>
+                </div>
+            </div>
+
+
+            <div class="first-form-button">
+                <a href="#">Подобрать</a>
+            </div>
+
+        </form>
+
+        <form action="" method="post" class="first-form-item">
+            <div>
+                <span class="form-item-title">Записться на бесплатную пробную консультацию</span>
+            </div>
+            <div>
+                <input type="tel" name="" id="tel" placeholder="Номер телефона">
+            </div>
+            <div>
+                <div class="first-form-button blue-bg">
+                    <a href="#">Записаться</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="current container">
+        <div class="block-title">
+            <h3>Актульные темы</h3>
+        </div>
+        <div class="current-list">
+            <div class="current-list-item pink">
+                
+                <a href="#">Самоопределение</a>
+                <span>01</span>
+            </div>
+            <div class="current-list-item blue">
+                
+                <a href="#">Апатия</a>
+                <span>02</span>
+            </div>
+            <div class="current-list-item orange"> 
+                
+                <a href="#">Депрессия</a>
+                <span>03</span>
+            </div>
+            <div class="current-list-item blue">
+                
+                <a href="#">Проблемы в личной жизни</a>
+                <span>04</span>
+            </div>
+            <div class="current-list-item orange">
+                <a href="#">Тревога</a> 
+                <span>05</span>
+            </div>
+            <div class="current-list-item pink">
+                <a href="#">Разобраться в себе</a>
+                <span>06</span>
+            </div>
+        </div>
+        <div class="current-video">
+            <div class="current-video-desc">
+                <div>
+                    <h3>Видео-презентация</h3>
+                    <p>Видео-презентация процесса консультации и небольшой обзор личного кабинета</p>
+                </div>
+                    
+            </div>
+            <div class="current-video-box">
+                <div id="current-player"></div>
+                <div id="thumbnail-container" class="thumbnail-container">
+                    <img class="thumbnail" id="thumbnail" />
+                </div>
+                <a class="current-start-video">
+                    <img src="img/you-btn.png">
+                    <span>Смотреть</span>
+                </a>
+            </div>   
+        </div>
+    </section>
+    
+    <section class="benefits container">
+        <div class="block-title">
+            <h3>Преимущества работы с платформой</h3>
+        </div>
+        <div class="benefits-list">
+            <div class="benefits-list-item">
+                <div class="benefits-list-item-img">
+                    <img src="img/shield.png" alt="">
+                </div>
+                <div class="benefits-list-item-desc">
+                    <h4>Удобно и безопасно</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="benefits-list-item">
+                <div class="benefits-list-item-img">
+                    <img src="img/like.png" alt="">
+                </div>
+                <div class="benefits-list-item-desc">
+                    <h4>Просто и комфортно</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="benefits-list-item">
+                <div class="benefits-list-item-img">
+                    <img src="img/trophy.png" alt="">
+                </div>
+                <div class="benefits-list-item-desc">
+                    <h4>Профессонально</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="benefits-list-item">
+                <div class="benefits-list-item-img">
+                    <img src="img/idea.png" alt="">
+                </div>
+                <div class="benefits-list-item-desc">
+                    <h4>Доступно</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="subscribe-form">
+                <form action="" method="post" class="subscribe-form-item">
+                    <div>
+                        <span class="form-item-title">Записться на бесплатную пробную консультацию</span>
+                    </div>
+                    <div>
+                        <input type="tel" name="" id="tel" placeholder="Номер телефона">
+                    </div>
+                    <div>
+                        <div class="subscribe-form-button">
+                            <a href="#">Записаться</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="seo container">
+        <div class="block-title">
+            <h3>PsyPort</h3>
+        </div>
+        <div class="seo-text">
+            <p>Мы много рассказываемо психотерапии, но иногда лучшене рассказывать, а показать. Поэтому мы публикуем запись реальной психотерапевтической консультации.</p> 
+            <p>Это не постановка: клиентка согласилась рассказать о своих реальных переживаниях, мы ничего не вырезали при монтаже и не переделывали.</p>
+            <p>В каком-то смысле это уникальный материал: со слезами, перескакиванием с одной темы на другую, паузами, расстерянностью - и даже звуками дрели, которую внезапно включили соседи. В финале мы попросили терапевта озвучить свои выводы и прокомментировать содеражание сессии.</p>
+        </div>
+    </section>
+    <section class="about container">
+        <div class="block-title">
+            <h3>О нас говорят</h3>
+        </div>
+        <div class="slider-video">
+            <div class="slider-video-item">
+                <img src="img/about-1.png" alt="">
+            </div>
+            <div class="slider-video-item">
+                <img src="img/about-2.png" alt="">
+            </div>
+            <div class="slider-video-item">
+                <img src="img/about-3.png" alt="">
+            </div>
+            <div class="slider-video-item">
+                <img src="img/about-1.png" alt="">
+            </div>
+            <div class="slider-video-item">
+                <img src="img/about-2.png" alt="">
+            </div>
+            <div class="slider-video-item">
+                <img src="img/about-3.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="request container">
+        <div class="block-title">
+            <h3>Отзывы</h3>
+        </div>
+
+        <div class="slider-request">
+            <div class="slider-request-item">
+                <div class="slider-request-item-head">
+                    <div class="slider-request-item-name">Васян</div>
+                    <div class="slider-request-item-rait">
+                        <div class="rateit" data-score="3"></div>
+                    </div>
+                    <div class="slider-request-item-date">06.09.2020</div>
+                </div>
+                <div class="slider-request-item-desc">
+                    <p>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития проекта. Практический опыт показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации всесторонне сбалансированных нововведений! </p>
+                    <p>Спасибо!</p>
+                </div>
+            </div>
+            <div class="slider-request-item">
+                <div class="slider-request-item-head">
+                    <div class="slider-request-item-name">Николай</div>
+                    <div class="slider-request-item-rait">
+                        <div class="rateit" data-score="4"></div>
+                    </div>
+                    <div class="slider-request-item-date">06.09.2020</div>
+                </div>
+                <div class="slider-request-item-desc">
+                    <p>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития проекта. Практический опыт показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации всесторонне сбалансированных нововведений! </p>
+                    <p>Спасибо!</p>
+                </div>
+            </div>
+            <div class="slider-request-item">
+                <div class="slider-request-item-head">
+                    <div class="slider-request-item-name">Потапыч</div>
+                    <div class="slider-request-item-rait">
+                        <div class="rateit" data-score="5"></div>
+                    </div>
+                    <div class="slider-request-item-date">06.09.2020</div>
+                </div>
+                <div class="slider-request-item-desc">
+                    <p>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития проекта. Практический опыт показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации всесторонне сбалансированных нововведений! </p>
+                    <p>Спасибо!</p>
+                    
+                </div>
+            </div>
+            <div class="slider-request-item">
+                <div class="slider-request-item-head">
+                    <div class="slider-request-item-name">Чика</div>
+                    <div class="slider-request-item-rait">
+                        <div class="rateit" data-score="2"></div>
+                    </div>
+                    <div class="slider-request-item-date">06.09.2020</div>
+                </div>
+                <div class="slider-request-item-desc">
+                    <p>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития проекта. Практический опыт показывает, что дальнейшее развитие различных форм деятельности способствует подготовке и реализации всесторонне сбалансированных нововведений! </p>
+                    <p>Спасибо!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-row container">
+            <div class="footer-logo">
+                <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li> <a href="#">Терапевты</a></li>
+                    <li> <a href="#">Стать терапевтом</a></li>
+                    <li> <a href="#">FAQ</a></li>
+                </ul>                  
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-email">
+                   <span>НАШ EMAIL</span> 
+                   <span>info@ateliesaun.ua</span> 
+                </div>
+                <div class="footer-contact-phone">
+                    <span>ТЕЛЕФОН</span>
+                    <span>8-800-775-95-19</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-privacy">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </footer>
+</body>
+
+</html>

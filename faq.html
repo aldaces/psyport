@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.raty.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+        <script src='https://www.youtube.com/iframe_api'></script>
+        <script src="js/common.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.raty.js"></script>
+        <title>Psy Port</title>
+    </head>
+
+<body>
+    <header class="header container">
+        <div class="header-logo">
+            <a href="#">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-list">
+                <label for="show-menu" class="show-menu"><!-- <span>Menu</span> --><div class="lines"></div></label>
+	            <input type="checkbox" id="show-menu">
+                <ul id="menu">
+                    <li><a href="#">Остаток на счету</a></li>
+                    <li><a href="#">Купить сессию</a></li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="header-lang">
+                <div class="dropdown">
+                    <div class="dropbtn">Русский <i class="fas fa-chevron-down"></i></div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Украинский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-profile">
+                <div class="dropdown">
+                    <div class="dropbtn"><i class="far fa-user"></i> Мой профиль <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Мои данные</a></li>
+                            <li><a href="#">Мое расписание</a></li>
+                            <li><a href="#">Мои сообщения</a></li>
+                            <li><a href="#">Мой терапевт</a></li>
+                            <li><a href="#">Мой счет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <section class="faq container">
+        <div class="block-title">
+            <h3>Часто задаваемые вопросы</h3>
+        </div>
+
+        <div class="row">
+            <div class="faq-list">
+                <ul class="accordion-list">
+                    <li>
+                        <h3>Зачем нужен психолог?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Можно ли проходить терапию онлайн?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Почему у ваших психологов нет отзывов от пользователей?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Как вы подберете мне психолога?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Чем ваш сервис лучше других?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Сколько времени нужно ходить к психологу?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Психолог — это дорого?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Психолог или психотерапевт?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Чем психотерапевт отличается от психолога, психиатра, коуча, психоаналитика?</h3>
+                        <div class="answer">
+                            <p>Психолог помогает решить конкретные проблемы, при этом не диктуя и ни в коем случае не навязывая свои способы их решения.</p>
+                            
+                            <p>Он направляет человека, дает ему возможность самому найти правильный выход из ситуации, ответить на многие вопросы, помогает разобраться в себе.</p>
+
+                            <p>Сеансы у таких специалистов развивают человека, улучшают его отношения с людьми и наполняют жизнь смыслом.</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq-other">
+                <div class="faq-other-header">
+                    <span>Другие вопросы:</span>
+                </div>
+                <ul class="faq-other-list">
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Частые вопросы</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Психологам</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Пациентам</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Онлайн vs. оффлайн</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Как оплатить сессию?</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Где мы будем встречаться?</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Что такое супервизия?</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Какой результат я получу?</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Как проходит сессия?</a></li>
+                    <li><a href=""><i class="fas fa-chevron-right"></i>Психолог — это дорого?</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-row container">
+            <div class="footer-logo">
+                <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li> <a href="#">Терапевты</a></li>
+                    <li> <a href="#">Стать терапевтом</a></li>
+                    <li> <a href="#">FAQ</a></li>
+                </ul>                  
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-email">
+                   <span>НАШ EMAIL</span> 
+                   <span>info@ateliesaun.ua</span> 
+                </div>
+                <div class="footer-contact-phone">
+                    <span>ТЕЛЕФОН</span>
+                    <span>8-800-775-95-19</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-privacy">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </footer>
+</body>
+
+</html>

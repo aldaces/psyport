@@ -1,0 +1,505 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    body {
+        margin: 0 20px;
+    }
+
+    .banner {
+        margin-bottom: -7%;
+    }
+
+    .banner .banner-text {
+        margin-top: 0;
+    }
+
+    .banner .banner-img img{
+        width: 80%;
+    }
+
+    .bridge .bridge-video img{
+        width: 90%;
+    }
+
+    .contacts .contact-block {
+        justify-content: space-around;
+    }
+
+    .news-block .news-block-item {
+        flex: 0 0 50%;
+    }
+
+    .news-block .news-title {
+
+    }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .banner {
+        margin-bottom: -2%;
+    }
+    
+    .slick-slide img {
+        margin: 0 auto;
+    }
+
+    .first-form .first-form-item {
+        padding: 25px;
+    }
+
+    .current .current-list .current-list-item::before {
+        left: 10px;
+    }
+
+    .subscribe .subscribe-form-item div {
+        flex: 0 0 30%;
+    }
+
+    .faq .faq-list {
+        width: 70%;
+    }
+
+    .myterapeft .myterapeft-blocks {
+        flex-wrap: wrap;
+    }
+
+    .myterapeft .myterapeft-blocks .myterapeft-foto {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 868px) {
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .header-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-menu {
+        font-size: 14px;
+        font-family: MonsteratBold;
+    }
+
+    .header-menu-list ul {
+        align-items: center;
+    }
+
+    .header-menu-list .lines {
+        height: 25px;
+        width: 25px;
+        background-image: url('../img/mob-menu.png');
+        background-repeat: no-repeat;
+    }
+
+    .header-menu-list ul {
+        position: static;
+        display: none;
+    }
+
+    .header-menu-list li {
+        margin-bottom: 1px;
+    }
+
+    .header-menu-list ul li {
+        margin: 5px;
+        padding: 9px
+    }
+
+    .header-menu-list .show-menu {
+		display:block;
+	}
+
+    .banner {
+        margin-bottom: 30px;
+        justify-content: center;
+        margin-top: 15%;
+    }
+
+    .banner .banner-img {
+        display: none;
+    }
+
+    .banner .banner-text .banner-text-desc,
+    .banner .banner-text .banner-text-title {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .current-video {
+        flex-wrap: wrap;
+    }
+
+    .first-form {
+        flex-wrap: wrap;
+    }
+
+    .first-form .first-form-item {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .first-form .first-form-item input[type="tel"] {
+        width: 100%;
+    }
+
+    .current .current-list .current-list-item {
+        flex: 0 0 49%;
+    }
+
+    .current-video .current-video-box {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .current-video .current-video-box .thumbnail-container {
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .benefits-list {
+        justify-content: center;
+    }
+
+    .benefits-list .benefits-list-item {
+        flex: 0 100%;
+    }
+
+    .benefits-list .benefits-list-item .benefits-list-item-img {
+        width: 90px;
+    }
+
+    .subscribe .subscribe-form-item span {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+
+    .subscribe .subscribe-form-item input {
+        width: 100%;
+    }
+
+    .footer .footer-row {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo, .footer-links, .footer-contact {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .footer-contact {
+        justify-content: center;
+    }
+
+    .selection .selection-group .selection-form {
+        padding: 20px 30px;
+    }
+
+    .transaction-summary {
+        flex-wrap: wrap;
+    }
+
+    .contacts .contact-block {
+        flex-wrap: wrap-reverse;
+    }
+
+    .contacts .contact-block .contact-form {
+        width: 100%;
+        page-break-after: 20px;
+    }
+
+    .faq .faq-list {
+        width: 65%;
+    }
+
+    .faq .faq-list ul.accordion-list li {
+        padding: 25px 30px;
+    }
+
+    .transactions {
+        flex-wrap: wrap-reverse;
+    }
+
+
+    .transactions .transactions-total, 
+    .transactions .transactions-hist, 
+    .transactions .transactions-total .button {
+        width: 100%;
+    }
+
+    .myterapeft .myterapeft-blocks .myterapeft-desc {
+        margin: 0 30px;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width : 768px) {
+
+    .selection .selection-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-group {
+        width: 70%;
+    }
+
+    .selection .selection-group .video-block {
+        text-align: center;
+    }
+
+    .selection .selection-group .selection-form {
+        width: 100%;
+    }
+
+    .faq .row {
+        flex-wrap: wrap;
+    }
+
+    .faq .faq-list, .faq .faq-other {
+        width: 100%;
+    }
+
+    .myterapeft .myterapeft-blocks .myterapeft-dip {
+        justify-content: center;
+    }
+    .myterapeft .myterapeft-blocks .myterapeft-desc h3 {
+        text-align: center;
+    }
+    
+    .myterapeft .myterapeft-blocks .myterapeft-desc ul {
+        margin: 10px 0;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .myterapeft .myterapeft-blocks .myterapeft-desc li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .data .data-form {
+        flex-wrap: wrap;
+    }
+
+    .data .data-form-group, .data .data-foto {
+        width: 100%;
+    }
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    body {
+        margin: 0 5px;
+    }
+
+    .header-menu {
+        flex-wrap: wrap;  
+    }
+
+    .header-lang, .header-regist, .header-login {
+        margin: 5px 40px;
+    }
+
+    .header-menu-list input[type=checkbox]:checked ~ #menu {
+        width: 55%;
+    }
+
+    .banner .banner-text .banner-text-title {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .first-form .first-form-item .first-form-checkbox {
+        flex-wrap: wrap;
+    }
+
+    .first-form .first-form-item .first-form-radio {
+        flex-wrap: wrap;
+    }
+
+    .custom-checkbox+label {
+        flex: 1 0 50%;
+        margin-bottom: 10px;
+    }
+
+    .benefits-list .benefits-list-item {
+        margin: 20px 0;
+    }
+
+    .benefits-list .benefits-list-item .benefits-list-item-img img {
+        width: 50%;
+    }
+
+    .subscribe .subscribe-form-item {
+        flex-wrap: wrap;
+    }
+
+    .subscribe .subscribe-form-item span {
+        margin: 10px;
+    }
+
+    .subscribe .subscribe-form .subscribe-form-button {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .subscribe .subscribe-form-item input {
+        width: 90%;
+    }
+
+    .subscribe .subscribe-form-item div {
+        flex: 1 0 100%;
+    }
+
+    .slider-video .slider-video-item {
+        margin: 0;
+    }
+
+    .slider-video .slick-slide img {
+        width: 64%;
+    }
+
+    .slider-request .slider-request-item .slider-request-item-head {
+        flex-wrap: wrap;
+    }
+
+    .thumbnail-container {
+        width: 77%;
+        margin: 0 auto;
+    }
+
+    .current .current-list .current-list-item {
+        flex: 1 0 100%;
+    }
+
+    .current-video .current-video-desc>div {
+        margin: 40px 20px;
+    }
+
+    .slider-video .slide-arrow {
+        right: 10px;
+    }
+
+    .slider-video .slide-arrow {
+        margin-top: -57px;
+    }
+
+    .slider-video .prev-arrow {
+        right: 50px;
+    }
+
+    .slider-request .slider-request-item {
+        padding: 15px;
+    }
+
+    .data .terapeft {
+        width: 100%;
+    }
+
+    .notes .notes-slider .slide-arrow {
+        margin-top: -60px;
+    }
+
+    .notifications-form > div {
+        flex: 0 0 100%;
+    }
+
+    .notifications .form-ways > div {
+        flex: 0 0 100%;
+    }
+
+    .notifications .form-ways {
+        width: 100%;
+        flex: 0 0 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-contact {
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-links ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-links ul li {
+        flex: 0 0 100%;
+        margin: 10px 50px;
+    }
+
+    .selection-form-exp, .selection-form-gen, .selection-form-lang, .selection-form-checkbox {
+        flex-wrap: wrap;
+    }
+    
+    .custom-label label {
+        flex: 1 0 100%;
+        margin-bottom: 10px;
+    }
+    
+
+    .selection-form-city input {
+        width: 100%;
+    }
+
+    .profile-group {
+        width: 100%;
+    }
+
+    .selection .selection-group .selection-profile {
+        margin-left: 0;
+    }
+
+    .transaction-block .transaction-block-item {
+        flex-wrap: wrap;
+    }
+
+    .transaction-summary {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .transaction-block .transaction-block-item .transaction-total {
+        width: 100%;
+    }
+
+    .contact-links .contact-links-num, .contact-links .contact-links-soc {
+        width: 100%;
+    }
+
+    .transactions .transactions-hist-list div {
+        margin: 20px 5px;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    
+}
+

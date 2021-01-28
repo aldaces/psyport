@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.raty.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src='https://www.youtube.com/iframe_api'></script>
+    <script src="js/common.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <title>Psy Port</title>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header-logo">
+            <a href="#">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-list">
+                <label for="show-menu" class="show-menu"><!-- <span>Menu</span> --><div class="lines"></div></label>
+	            <input type="checkbox" id="show-menu">
+                <ul id="menu">
+                    <li><a href="#">Остаток на счету</a></li>
+                    <li><a href="#">Купить сессию</a></li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="header-lang">
+                <div class="dropdown">
+                    <div class="dropbtn">Русский <i class="fas fa-chevron-down"></i></div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Украинский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-profile">
+                <div class="dropdown">
+                    <div class="dropbtn"><i class="far fa-user"></i> Мой профиль <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Мои данные</a></li>
+                            <li><a href="#">Мое расписание</a></li>
+                            <li><a href="#">Мои сообщения</a></li>
+                            <li><a href="#">Мой терапевт</a></li>
+                            <li><a href="#">Мой счет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <section class="selection container">
+        <div class="block-title">
+            <h3>Подбор специалиста</h3>
+        </div>
+        <div class="selection-group">
+            <div class="selection-form">
+                <form action="" method="POST" class="selection-form-group">
+                    <div class="selection-form-item">
+                        <span class="form-item-title">Запрос клиента</span>
+                        <div class="selection-form-text">
+                            <textarea name="" id="" placeholder="Что вас беспокоит?"></textarea>
+                        </div>
+                    </div>
+                    <div class="selection-form-item">
+                        <span class="form-item-title">Для кого подбираете психотерапевта?</span>
+                        <div class="selection-form-checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="" id="self">
+                            <label for="self">Для себя</label>
+
+                            <input type="checkbox" class="custom-checkbox" name="" id="couple">
+                            <label for="couple">Для пары</label>
+
+                            <input type="checkbox" class="custom-checkbox" name="" id="family">
+                            <label for="family">Для семьи</label>
+
+                            <input type="checkbox" class="custom-checkbox" name="" id="children">
+                            <label for="children">Для ребенка</label>
+                        </div>
+                    </div>
+                    <div class="selection-form-item">
+                        <span class="form-item-title">Опыт</span>
+                        <div class="selection-form-exp custom-label">
+
+                            <input type="radio" name="exp" id="1">
+                            <label for="1">До 5 лет</label>
+
+                            <input type="radio" name="exp" id="2">
+                            <label for="2">от 5 лет</label>
+
+                            <input type="radio" name="exp" id="3">
+                            <label for="3">более 10 лет</label>
+                        </div>
+                    </div>
+                    <div class="selection-form-item">
+                        <span class="form-item-title">Гендер</span>
+                        <div class="selection-form-gen custom-label">
+
+                            <input type="radio" name="gen" id="man">
+                            <label for="man">Мужчина</label>
+
+                            <input type="radio" name="gen" id="wom">
+                            <label for="wom">Женщина</label>
+
+                            <input type="radio" name="gen" id="non">
+                            <label for="non">Пол не важен</label>
+                        </div>
+                    </div>
+                    <div class="selection-form-item">
+                        <span class="form-item-title">Город</span>
+                        <div class="selection-form-city custom-label">
+
+                            <input type="text" name="" id="" placeholder="Одесса">
+                        </div>
+                    </div>
+                    <div class="selection-form-item">
+                        <span class="form-item-title">Язык</span>
+                        <div class="selection-form-lang custom-label">
+
+                            <input type="radio" name="lang" id="rus">
+                            <label for="rus">Русский</label>
+
+                            <input type="radio" name="lang" id="ukr">
+                            <label for="ukr">Українська</label>
+
+                            <input type="radio" name="lang" id="eng">
+                            <label for="eng">English</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="profile-group">
+                <div class="selection-profile">
+                    <div class="profile-title">
+                        <img src="img/profile-ava.png" alt="">
+                        <div class="profile-title-name">Елена Любарская
+                            <span class="frofile-title-age"> 32 года</span>
+                        </div>
+
+                    </div>
+                    <div class="profile-menu-self">
+                        <ul>
+                            <li><a href="">Мои данные</a></li>
+                            <li><a href="">Мое расписание</a></li>
+                            <li><a href="">Мои сообщения <span class="massage-count">(2)</span></a></li>
+                            <li><a href="">Мой терапевт</a></li>
+                            <li><a href="">Мой счет</a></li>
+                        </ul>
+                    </div>
+                    <div class="profile-menu-gen">
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Новости</a></li>
+                            <li><a href="">Связаться с нами</a></li>
+                            <li><a href="">Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-video">
+                    <div class="video-block">
+                        <span>Видео как пользоваться</span>
+                        <img src="img/profile-video.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="selection-button-group">
+            <div class="selection-button">
+                <a href="">Подобрать</a>
+            </div>
+            <span class="selection-button-desc">Нажимая «Подобрать», вы принимаете
+                Условия пользования сайтом
+                и Обработки персональных данных</span>
+        </div>
+    </section>
+    <!-- <section class="schedule container">
+        <div class="block-title">
+            <h3>Расписание</h3>
+        </div>
+        <div class="schedule-calendar">
+            <div class="calendar-container">
+                <div class="calendar">
+                    <div class="emty"></div>
+                    <div class="day1">Понедельник</div>
+                    <div class="day2">Вторник</div>
+                    <div class="day3">Среда</div>
+                    <div class="day4">Четверг</div>
+                    <div class="day5">Пятница</div>
+                    <div class="day6">Суббота</div>
+                    <div class="day7">Воскресенье</div>
+                    <div class="hour1">10:00</div>
+                    <div class="hour2">11:00</div>
+                    <div class="hour3">12:00</div>
+                    <div class="hour4">13:00</div>
+                    <div class="hour5">14:00</div>
+                    <div class="hour6">15:00</div>
+                    <div class="hour7">16:00</div>
+                    <div class="hour8">17:00</div>
+                    <div class="hour9">18:00</div>
+                    <div class="a"></div>
+                    <div class="b"></div>
+                    <div class="c"></div>
+                    <div class="v"></div>
+                    <div class="n"></div>
+                    <div class="q"></div>
+                    <div class="e"></div>
+                    <div class="s"></div>
+                    <div class="d"></div>
+                    <div class="f"></div>
+                    <div class="g"></div>
+                    <div class="t"></div>
+                    <div class="y"></div>
+                    <div class="u"></div>
+                    <div class="i"></div>
+                    <div class="h"></div>
+                    <div class="dg"></div>
+                    <div class="hg"></div>
+                    <div class="jh"></div>
+                    <div class="dgf"></div>
+                    <div class="sd"></div>
+                    <div class="as"></div>
+                    <div class="ds"></div>
+                    <div class="fd"></div>
+                    <div class="ff"></div>
+                    <div class="gg"></div>
+                    <div class="jhg"></div>
+                    <div class="dfg"></div>
+                    <div class="sdf"></div>
+                    <div class="sfd"></div>
+                    <div class="asd"></div>
+                    <div class="wer"></div>
+                    <div class="gd"></div>
+                    <div class="hgf"></div>
+                    <div class="df"></div>
+                    <div class="aa"></div>
+                    <div class="aad"></div>
+                    <div class="aab"></div>
+                    <div class="an"></div>
+                    <div class="er"></div>
+                    <div class="rt"></div>
+                    <div class="ty"></div>
+                    <div class="zx"></div>
+                    <div class="xc"></div>
+                    <div class="cv"></div>
+                    <div class="vb"></div>
+                    <div class="bn"></div>
+                    <div class="nm"></div>
+                    <div class="mi"></div>
+                    <div class="asda"></div>
+                    <div class="hj"></div>
+                    <div class="jk"></div>
+                    <div class="kl"></div>
+                    <div class="sa"></div>
+                    <div class="dss"></div>
+                    <div class="fds"></div>
+                    <div class="dsaa"></div>
+                    <div class="ssd"></div>
+                    <div class="sdsd"></div>
+                    <div class="dfd"></div>
+                    <div class="gfgf"></div>
+                    <div class="hgh"></div>
+                    <div class="hgg"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="bridge container">
+        <div class="block-title">
+            <h3>Видео-мост</h3>
+        </div>
+        <div class="bridge-video">
+            <img src="img/bridge.png" alt="">
+        </div>
+         
+    </section>
+
+    <section class="transaction container">
+        <div class="block-title">
+            <h3>История транзакций</h3>
+        </div>
+        <div class="transaction-block">
+            <div class="transaction-block-item">
+                <div class="transaction-summary width">
+                    <div><i class="fas fa-caret-up"></i></div>
+                    <div>ID транзакции:  <span>584H2947JL37352</span></div>
+                    <div>Дата и время:  <span>19.05.2020  16:28</span></div>
+                    <div>Сумма:  <span>+ 2 500 грн</span></div>
+                </div>
+                <div class="transaction-total">
+                    <div>Остаток на счету</div>
+                    <div>2 500 грн</div>
+                </div>
+            </div>
+            <div class="transaction-block-item">
+                <div class="transaction-summary width">
+                    <div><i class="fas fa-caret-down"></i></div>
+                    <div>ID транзакции:  <span>584H2947JL37352</span></div>
+                    <div>Дата и время:  <span>19.05.2020  16:28</span></div>
+                    <div>Сумма:  <span>- 1 000 грн</span></div>
+                </div>
+                <div class="transaction-total">
+                    <div>Остаток на счету</div>
+                    <div>1 500 грн</div>
+                </div>
+            </div>
+            <div class="transaction-block-item">
+                <div class="transaction-summary width">
+                    <div><i class="fas fa-caret-up"></i></div>
+                    <div>ID транзакции:  <span>584H2947JL37352</span></div>
+                    <div>Дата и время:  <span>19.05.2020  16:28</span></div>
+                    <div>Сумма:  <span>+ 500 грн</span></div>
+                </div>
+                <div class="transaction-total">
+                    <div>Остаток на счету</div>
+                    <div>2 000 грн</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news container">
+        <div class="block-title">
+            <h3>Новости</h3>
+        </div>
+        <div class="news-slider">
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news1.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар "Эпоха коронавируса: как справляться с тревогой и стрессом?"
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news2.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар для подростков и их родителей: «Как разобраться с непростыми переживаниями.»
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+
+
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news3.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар: "Как разобраться в противоречивых чувствах и выбрать для себя счастливые отношения"
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news2.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар для подростков и их родителей: «Как разобраться с непростыми переживаниями.»
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news1.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар "Эпоха коронавируса: как справляться с тревогой и стрессом?"
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news3.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар: "Как разобраться в противоречивых чувствах и выбрать для себя счастливые отношения"
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-row container">
+            <div class="footer-logo">
+                <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li> <a href="#">Терапевты</a></li>
+                    <li> <a href="#">Стать терапевтом</a></li>
+                    <li> <a href="#">FAQ</a></li>
+                </ul>                  
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-email">
+                   <span>НАШ EMAIL</span> 
+                   <span>info@ateliesaun.ua</span> 
+                </div>
+                <div class="footer-contact-phone">
+                    <span>ТЕЛЕФОН</span>
+                    <span>8-800-775-95-19</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-privacy">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.raty.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src='https://www.youtube.com/iframe_api'></script>
+    <script src="js/common.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <title>Psy Port</title>
+</head>
+<body>
+    <header class="header container">
+        <div class="header-logo">
+            <a href="#">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-list">
+                <label for="show-menu" class="show-menu"><!-- <span>Menu</span> --><div class="lines"></div></label>
+	            <input type="checkbox" id="show-menu">
+                <ul id="menu">
+                    <li><a href="#">Остаток на счету</a></li>
+                    <li><a href="#">Купить сессию</a></li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="header-lang">
+                <div class="dropdown">
+                    <div class="dropbtn">Русский <i class="fas fa-chevron-down"></i></div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Украинский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-profile">
+                <div class="dropdown">
+                    <div class="dropbtn"><i class="far fa-user"></i> Мой профиль <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Мои данные</a></li>
+                            <li><a href="#">Мое расписание</a></li>
+                            <li><a href="#">Мои сообщения</a></li>
+                            <li><a href="#">Мой терапевт</a></li>
+                            <li><a href="#">Мой счет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <section class="data container">
+        <div class="block-title">
+            <h3>Мои данные</h3>
+        </div>
+        <form action="" method="post" class="data-form">
+            <div class="data-form-group">
+                <div  class="">
+                    <div class="form-item">
+                        <span class="form-item-title">Фамилия</span>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-item">
+                        <span class="form-item-title">Имя</span>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-item">
+                        <span class="form-item-title">Отчество</span>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-item">
+                        <span class="form-item-title">Логин</span>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-item">
+                        <span class="form-item-title">Пароль</span>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-item">
+                        <span class="form-item-title">Именить пароль</span>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="button">
+                        <a href="">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-foto">
+                <img src="img/data-foto.png" alt="">
+                <div class="foto-link">
+                    <a href="#">Именить фото</a>
+                </div>
+
+                <div class="terapeft">
+                    <div class="terapeft-title">
+                        <div class="terapeft-foto">
+                            <img src="img/terapeft-foto.png" alt="">
+                        </div>
+                        <div class="terapeft-name">
+                            <span>Маргарита Иванова</span>
+                            <span>Мой терапевт</span>
+                        </div>
+                    </div>
+                    <div class="terapeft-desc">
+                        <ul>
+                            <li>32 года</li>
+                            <li>Стаж: 5 лет</li>
+                            <li>Образование: Институт психологии БГПУ</li>
+                            <li>Супервизия: 1 год</li>
+                            <li>Основные направления: отношения, выгорание, мотивация, тренинг, планирование, самооценка.</li>
+                        </ul>
+                    </div>
+                    <div class="terapeft-button">
+                        <a href="#">Перейти</a>
+                    </div>
+                </div>   
+            </div>
+            
+        </form>
+        
+    </section>
+
+    <section class="notes container">
+        <div class="block-title">
+            <h3>Мои заметки</h3>
+        </div>
+        <div class="notes-slider">
+            <div class="notes-item">
+                <div class="notes-item-title pink">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div class="notes-edit">
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title orange">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title blue">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title blue">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title orange">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title blue">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title pink">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title orange">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title blue">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title pink">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title blue">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>
+            <div class="notes-item">
+                <div class="notes-item-title orange">
+                    <div>
+                        <span>Заметка №1</span>
+                        <span>23.10.20   18:23</span>
+                    </div>
+                    <div>
+                        <div>
+                            <a href=""><i class="fas fa-pen"></i></a>
+                            <a href=""><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-item-desc">
+                    <div>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.</div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <section class="notifications container">
+        <div>
+            <div class="block-title">
+               <h3>Настройки уведомлений</h3>
+            </div>
+
+            <form action="" class="notifications-form">
+                <div>
+                    <input type="checkbox" name="1" id="1" class="custom-checkbox">
+                    <label for="1">Новые сообщения</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="2" id="2" class="custom-checkbox">
+                    <label for="2">Новые сессии</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="3" id="3" class="custom-checkbox">
+                    <label for="3">Сессия перенесена</label>
+                </div>
+               
+                <div>
+                    <input type="checkbox" name="4" id="4" class="custom-checkbox">
+                    <label for="4">Сессия состоялась</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="5" id="5" class="custom-checkbox">
+                    <label for="5">Сессия пропущена</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="6" id="6" class="custom-checkbox">
+                    <label for="6">Сессия оплачена</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="7" id="7" class="custom-checkbox">
+                    <label for="7">Сессия не оплачена</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="8" id="8" class="custom-checkbox">
+                    <label for="8">Напоминания о сессиях</label>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="block-title">
+               <h3>Способы уведомлений</h3>
+            </div>
+            <form action="" class="form-ways">
+                <div>
+                    <input type="checkbox" name="" id="9" class="custom-checkbox">
+                    <label for="9">E-mail</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="10" class="custom-checkbox">
+                    <label for="10">Боты</label>
+                </div>
+            </form>
+        </div>
+        <div class="button">
+            <a href="#">Сохранить</a>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-row container">
+            <div class="footer-logo">
+                <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li> <a href="#">Терапевты</a></li>
+                    <li> <a href="#">Стать терапевтом</a></li>
+                    <li> <a href="#">FAQ</a></li>
+                </ul>                  
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-email">
+                   <span>НАШ EMAIL</span> 
+                   <span>info@ateliesaun.ua</span> 
+                </div>
+                <div class="footer-contact-phone">
+                    <span>ТЕЛЕФОН</span>
+                    <span>8-800-775-95-19</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-privacy">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </footer>
+</body>
+</html>

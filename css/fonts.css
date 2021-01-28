@@ -1,0 +1,20 @@
+@font-face {
+    font-family: MonsteratR; 
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: MonsteratBlack; 
+    src: url(../fonts/Montserrat-Black.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: MonsteratBold; 
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
