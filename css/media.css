@@ -89,10 +89,20 @@
         font-size: 12px;
         font-weight: normal;
         font-family: MonsteratR;
+        display: flex;
+    }
+
+    #mobile-lang span {
+        display: block;
+        margin-right: 10px;
     }
 
     #mobile-lang a {
         color: #65d7ed;
+    }
+
+    .dropdown-content a {
+        padding: 0;
     }
 
     a.disable {
@@ -101,13 +111,13 @@
         color: #888!important;
     }
 
+    .dropdown-content {
+        width: 200px;
+    }
+
     .header-menu {
         font-size: 14px;
         font-family: MonsteratBold;
-    }
-
-    .header-menu-list ul {
-        align-items: center;
     }
 
     .header-menu-list .lines {
@@ -118,8 +128,8 @@
     }
 
     .header-menu-list ul {
-        position: static;
-        display: none;
+        align-items: center;
+        background-color: #fff;
     }
 
     .header-menu-list li {

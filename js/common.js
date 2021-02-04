@@ -1,17 +1,5 @@
-$(document).ready( function(){
-
-	$('#show-menu').click( function(){
-		$('#menu').addClass('is-active');
-	});
-	
-	$(document).click( function(){
-		$('#menu').removeClass('is-active');
-	});
-});
-
-
-
 $(document).ready(function ($) {
+	
 
 	$('.popup-fade-reg').click(function (e) {
 		if ($(e.target).closest('.popup-log').length == 0) {
@@ -64,7 +52,7 @@ $(document).ready(function ($) {
 	});
 
 
-	
+
 	$('.popup-fade-pick').click(function (e) {
 		if ($(e.target).closest('.popup-pick').length == 0) {
 			$(this).fadeOut();
@@ -88,26 +76,26 @@ $(document).ready(function ($) {
 	});
 
 
-	$(function() {
-	
+	$(function () {
+
 		//BEGIN
-		$(".js-acc-title").on("click", function(e) {
-	
+		$(".js-acc-title").on("click", function (e) {
+
 			e.preventDefault();
 			var $this = $(this);
-	
+
 			if (!$this.hasClass("acc-active")) {
 				$(".js-acc-content").slideUp(800);
 				$(".js-acc-title").removeClass("acc-active");
 				$('.js-acc-rotate').removeClass('acc-rotate');
 			}
-	
+
 			$this.toggleClass("acc-active");
 			$this.next().slideToggle();
-			$('.js-acc-rotate',this).toggleClass('acc-rotate');
+			$('.js-acc-rotate', this).toggleClass('acc-rotate');
 		});
 		//END
-		
+
 	});
 
 	//youtube script
@@ -152,68 +140,67 @@ $(document).ready(function ($) {
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 3,
-		mobileFirst:true,
+		mobileFirst: true,
 		prevArrow: '<div class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i> </div>',
 		nextArrow: '<div class="slide-arrow next-arrow"> <i class="fas fa-chevron-right"></i> </div>',
-		responsive: [
-			{
-			breakpoint: 320,
+		responsive: [{
+				breakpoint: 320,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: false
 				}
-			  },
-			
+			},
+
 			{
-			breakpoint: 992,
+				breakpoint: 992,
 				settings: {
-			  		slidesToShow: 2,
-			  		slidesToScroll: 1,
-			  		centerMode: false
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: false
 				}
 			},
 			{
-			breakpoint: 1200,
+				breakpoint: 1200,
 				settings: {
-						slidesToShow: 3,
-						slidesToScroll: 3,
-						centerMode: false
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					centerMode: false
 				}
 			}
 		]
-	  });
+	});
 
 	$('.slider-request').slick({
-	infinite: true,
-	slidesToShow: 2,
-	slidesToScroll: 2,
-	mobileFirst: true,
-	prevArrow: '<div class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i> </div>',
-	nextArrow: '<div class="slide-arrow next-arrow"> <i class="fas fa-chevron-right"></i> </div>',
-	responsive: [
-		{
-			breakpoint: 320,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		mobileFirst: true,
+		prevArrow: '<div class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i> </div>',
+		nextArrow: '<div class="slide-arrow next-arrow"> <i class="fas fa-chevron-right"></i> </div>',
+		responsive: [{
+				breakpoint: 320,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: false
 				}
-			  },
-			
+			},
+
 			{
-			breakpoint: 992,
+				breakpoint: 992,
 				settings: {
-			  		slidesToShow: 2,
-			  		slidesToScroll: 1,
-			  		centerMode: false
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: false
+				}
 			}
-		}]
+		]
 	});
 
-	$('.rateit').raty(
-	{ readOnly: true}
-	);
+	$('.rateit').raty({
+		readOnly: true
+	});
 
 });
 
@@ -226,33 +213,33 @@ $(document).ready(function ($) {
 		mobileFirst: true,
 		prevArrow: '<div class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i> </div>',
 		nextArrow: '<div class="slide-arrow next-arrow"> <i class="fas fa-chevron-right"></i> </div>',
-		responsive: [
-			{
-			breakpoint: 320,
+		responsive: [{
+				breakpoint: 320,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: false
 				}
 			},
-				
+
 			{
-			breakpoint: 768,
+				breakpoint: 768,
 				settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1,
-						centerMode: false
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: false
 				}
 			},
 			{
-			breakpoint: 1200,
+				breakpoint: 1200,
 				settings: {
-						slidesToShow: 3,
-						slidesToScroll: 3,
-						centerMode: false
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					centerMode: false
 				}
-			}]
-		});
+			}
+		]
+	});
 });
 
 $(document).ready(function ($) {
@@ -264,47 +251,47 @@ $(document).ready(function ($) {
 		mobileFirst: true,
 		prevArrow: '<div class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i> </div>',
 		nextArrow: '<div class="slide-arrow next-arrow"> <i class="fas fa-chevron-right"></i> </div>',
-		responsive: [
-			{
-			breakpoint: 320,
+		responsive: [{
+				breakpoint: 320,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					centerMode: false
 				}
 			},
-				
+
 			{
-			breakpoint: 768,
+				breakpoint: 768,
 				settings: {
-						slidesToShow: 2,
-						slidesToScroll: 1,
-						centerMode: false
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: false
 				}
 			},
 			{
-			breakpoint: 1200,
+				breakpoint: 1200,
 				settings: {
-						slidesToShow: 3,
-						slidesToScroll: 3,
-						centerMode: false
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					centerMode: false
 				}
-			}]
+			}
+		]
 	});
 });
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 	$('.accordion-list > li > .answer').hide();
-	  
-	$('.accordion-list > li').click(function() {
-	  if ($(this).hasClass("active")) {
-		$(this).removeClass("active").find(".answer").slideUp();
-	  } else {
-		$(".accordion-list > li.active .answer").slideUp();
-		$(".accordion-list > li.active").removeClass("active");
-		$(this).addClass("active").find(".answer").slideDown();
-	  }
-	  return false;
+
+	$('.accordion-list > li').click(function () {
+		if ($(this).hasClass("active")) {
+			$(this).removeClass("active").find(".answer").slideUp();
+		} else {
+			$(".accordion-list > li.active .answer").slideUp();
+			$(".accordion-list > li.active").removeClass("active");
+			$(this).addClass("active").find(".answer").slideDown();
+		}
+		return false;
 	});
-  });
+});
