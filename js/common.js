@@ -24,6 +24,10 @@ $(document).ready(function ($) {
 		}
 	});
 
+
+
+
+
 	$('.popup-fade-log').click(function (e) {
 		if ($(e.target).closest('.popup-log').length == 0) {
 			$(this).fadeOut();
@@ -46,10 +50,51 @@ $(document).ready(function ($) {
 		}
 	});
 
-	$('.popup-fade-log').click(function (e) {
-		if ($(e.target).closest('.popup-log').length == 0) {
+
+	
+	$('.popup-fade-pick').click(function (e) {
+		if ($(e.target).closest('.popup-pick').length == 0) {
 			$(this).fadeOut();
 		}
+	});
+	$('.popup-open-pick').click(function () {
+		$('.popup-fade-pick').fadeIn();
+		return false;
+	});
+
+	$('.popup-close-pick').click(function () {
+		$(this).parents('.popup-fade-pick').fadeOut();
+		return false;
+	});
+
+	$(document).keydown(function (e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade-pick').fadeOut();
+		}
+	});
+
+
+	$(function() {
+	
+		//BEGIN
+		$(".js-acc-title").on("click", function(e) {
+	
+			e.preventDefault();
+			var $this = $(this);
+	
+			if (!$this.hasClass("acc-active")) {
+				$(".js-acc-content").slideUp(800);
+				$(".js-acc-title").removeClass("acc-active");
+				$('.js-acc-rotate').removeClass('acc-rotate');
+			}
+	
+			$this.toggleClass("acc-active");
+			$this.next().slideToggle();
+			$('.js-acc-rotate',this).toggleClass('acc-rotate');
+		});
+		//END
+		
 	});
 
 	//youtube script
