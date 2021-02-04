@@ -1,3 +1,16 @@
+$(document).ready( function(){
+
+	$('#show-menu').click( function(){
+		$('#menu').addClass('is-active');
+	});
+	
+	$(document).click( function(){
+		$('#menu').removeClass('is-active');
+	});
+});
+
+
+
 $(document).ready(function ($) {
 
 	$('.popup-fade-reg').click(function (e) {
