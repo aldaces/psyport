@@ -54,6 +54,15 @@ input:focus {
 
 }
 
+
+.header-menu-list .dropdown {
+    display: none;
+}
+
+.header-menu-list .desctop {
+    display: flex;
+}
+
 .header-menu-list ul li {
     margin: 0 15px;
 }

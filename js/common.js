@@ -2,7 +2,7 @@ $(document).ready(function ($) {
 	
 
 	$('.popup-fade-reg').click(function (e) {
-		if ($(e.target).closest('.popup-log').length == 0) {
+		if ($(e.target).closest('.popup-reg').length == 0) {
 			$(this).fadeOut();
 		}
 	});
