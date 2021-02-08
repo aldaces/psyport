@@ -103,8 +103,8 @@ $(document).ready(function ($) {
 
 	onYouTubeIframeAPIReady = function () {
 		player = new YT.Player('current-player', {
-			height: '285',
-			width: '570',
+			height: '100%',
+			width: '100%',
 			videoId: 'QNcB_vuTLSg', // youtube video id
 			playerVars: {
 				'autoplay': 0,
