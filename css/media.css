@@ -576,10 +576,4 @@
     .transactions .transactions-hist-list div {
         margin: 20px 5px;
     }
-}
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-    
-}
+}}
