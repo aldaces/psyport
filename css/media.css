@@ -91,6 +91,10 @@
         display: block;
     }
 
+    .header-lang {
+        display: none;
+    }
+
     #mobile-lang {
         display: block;
         margin: 15px;
@@ -174,10 +178,6 @@
         margin-top: 15%;
         flex-direction: column-reverse;
     }
-
-   /*  .banner .banner-img {
-        display: none;
-    } */
 
     .banner .banner-text .banner-text-desc,
     .banner .banner-text .banner-text-title {
@@ -309,8 +309,6 @@
     }
     
 }
-
-
 
 
 @media only screen and (max-width : 768px) {

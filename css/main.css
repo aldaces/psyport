@@ -899,6 +899,14 @@ input[type="radio"]:checked+label {
     text-decoration: none;
 }
 
+.fc .fc-button-group > .fc-button {
+    background-color: #7edaed;
+}
+
+.fc .fc-button-primary {
+    background-color: #7edaed!important;
+}
+
 .seo {
     width: 90%;
 }
