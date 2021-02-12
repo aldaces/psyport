@@ -395,7 +395,8 @@
 
     .banner .banner-text .banner-text-title {
         width: 80%;
-        margin: 0 auto;
+        margin: 10px auto;
+        font-size: 28px;
     }
 
     .first-form .first-form-item .first-form-checkbox {
