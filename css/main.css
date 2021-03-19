@@ -2225,6 +2225,7 @@ input[type="radio"]:checked+label {
     box-shadow: 0 0 18px #f1f1f5;
     border-radius: 8px;
     background-color: #ffffff;
+    height: 100%;
 }
 
 .messages-block .messages-contacts 
@@ -2261,7 +2262,7 @@ input[type="radio"]:checked+label {
 }
 
 .messages-body {
-    flex: 0 0 65%;
+    flex: 0 0 70%;
 }
 
 .messages-body .messages-body-title {
@@ -2283,10 +2284,86 @@ input[type="radio"]:checked+label {
 
 .messages-body .messages-body-list 
 .messages-body-list-names{
-    flex: 0 0 50%;
+    border: 1px solid #e8edef;
+    width: 45%;
+    background-color: #fff;
 }
 
 .messages-body .messages-body-list
 .messages-body-list-messadge {
-    
+    width: 55%;
+    border: 1px solid #e8edef;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.messages-body .messages-body-list
+.messages-list-item {
+    height: 70px;
+    border-bottom: 1px solid #e8edef;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.messages-body .messages-body-list
+.messages-list-body .messages-list-body-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.messages-body .messages-body-list
+.messages-list-body .messages-list-body-name span:first-child {
+    font-size: 12px;
+    font-family: MonsteratBold;
+}
+
+.messages-body .messages-body-list
+.messages-list-body .messages-list-body-name span:last-child {
+    font-size: 8px;
+    color: #2f2f2f;
+}
+
+.messages-body .messages-body-list
+.messages-list-body .messages-list-body-short {
+    font-size: 10px;
+    color: #2f2f2f;
+    padding-top: 5px;
+}
+
+.messages-list-delete{
+    font-size: 10px;
+    color: #e2e7e9;
+}
+
+.messages-body-list-messadge .messages-body-list-messadge-item{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.messages-body-list-messadge .messages-body-list-messadge-foto {
+    width: 36px;
+    height: 36px;
+}
+
+.messages-body-list-messadge .messages-body-list-messadge-text{
+    font-size: 12px;
+    line-height: 16px;
+    color: #2f2f2f;
+    padding: 20px 40px;
+}
+
+.request {
+    flex-direction: row-reverse;
+}
+
+.messages-body-form {
+    height: 210px;
+}
+
+.messages-body-form input[type=text] {
+    height: 100px;
+    width: 100%;
+    border: 1px solid #e2e7e9;
 }

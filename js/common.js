@@ -374,3 +374,13 @@ document.addEventListener('DOMContentLoaded', function() {
     calendar.render();
 
   });
+
+  $(document).ready(function () {
+	var size = 40,
+    newsContent= $('.messages-list-body-short'),
+    newsText = newsContent.text();
+    
+	if(newsText.length > size){
+		newsContent.text(newsText.slice(0, size) + ' ...');
+	}
+  })
