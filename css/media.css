@@ -29,6 +29,10 @@
     .news-block .news-block-item {
         flex: 0 0 50%;
     }
+
+    .messages-body .messages-body-list .messages-body-list-names {
+        width: 50%;
+    }
 }
 
 
@@ -65,6 +69,19 @@
     .myterapeft .myterapeft-blocks .myterapeft-foto {
         width: 100%;
         text-align: center;
+    }
+
+    .messages-block {
+        flex-wrap: wrap;
+    }
+
+    .messages-block .messages-contacts {
+        flex: 0 0 100%;
+        margin-bottom: 50px;
+    }
+
+    .messages-body {
+        flex: 0 0 100%;
     }
 }
 

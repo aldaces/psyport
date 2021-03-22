@@ -2263,6 +2263,8 @@ input[type="radio"]:checked+label {
 
 .messages-body {
     flex: 0 0 70%;
+    height: 100%;
+    margin-bottom: 50px;
 }
 
 .messages-body .messages-body-title {
@@ -2331,7 +2333,7 @@ input[type="radio"]:checked+label {
     padding-top: 5px;
 }
 
-.messages-list-delete{
+.messages-list-delete a{
     font-size: 10px;
     color: #e2e7e9;
 }
@@ -2352,6 +2354,8 @@ input[type="radio"]:checked+label {
     line-height: 16px;
     color: #2f2f2f;
     padding: 20px 40px;
+    box-shadow: 0px 0px 10px 0px #f1f1f5;
+    border-radius: 10px;
 }
 
 .request {
@@ -2362,8 +2366,43 @@ input[type="radio"]:checked+label {
     height: 210px;
 }
 
-.messages-body-form input[type=text] {
+.messages-body-form textarea {
     height: 100px;
     width: 100%;
     border: 1px solid #e2e7e9;
+    box-shadow: 0px 0px 10px 0px #f1f1f5;
+    resize: none;
+    font-family: inherit;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 23px;
+}
+
+.messages-body-form textarea:focus {
+    outline: none;
+}
+
+.messages-body-form .messadge-button {
+    width: 165px;
+    height: 38px;
+    background-color: #ff9593;
+    box-shadow: 2px 3px 16px 0px rgba(255,149,147,0.33);
+    border-radius: 19px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.messages-body-form label {
+    font-size: 12px;
+    color: #2f2f2f;
+    font-family: MonsteratBold;
+    cursor: pointer;
+}
+
+
+.messages-body-form input[type="file"] {
+    display: none;
 }
