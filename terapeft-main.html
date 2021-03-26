@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.raty.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/calendar.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" 
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" 
+        crossorigin="anonymous"></script>
+    <script src='https://www.youtube.com/iframe_api'></script>
+    <script src="js/common.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/locales-all.js"></script>
+
+    <title>Psy Port</title>
+
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header-logo">
+            <a href="#">
+                <img src="img/logo.svg" alt="" class="logo">
+            </a>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-list">
+
+                <ul class="desctop">
+                    <li><a href="#">Условия сотрудничества</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <img src="img/mob-menu.svg" alt="">
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li id="mobile-lang">
+                                <span><a href="#">Русский</a></span>
+                                <span>/</span> 
+                                <span><a href="#" class="disable">Украинский</a></span>
+                            </li>
+                            <li><a href="#">Остаток на счету</a></li>
+                            <li><a href="#">Купить сессию</a></li>
+                            <li><a href="#">Сообщения</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-lang">
+                <div class="dropdown">
+                    <div class="dropbtn">Русский</div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Украинский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-regist">
+                <a href="#" class="popup-open-reg">Регистрация</a>
+                <div class="popup-fade-reg">
+                    <div class="popup-reg">
+                        <a class="popup-close-reg" href="#"><i class="fas fa-times"></i></a>
+                        <div class="popup-title">
+                            Регистрация
+                        </div>
+                        <form action="" class="register-form">
+                            <div class="register-form-item">
+                                <span>Ваше имя</span>
+                                <input type="text" name="" id="" placeholder="Имя">
+                            </div>
+                            <div class="register-form-item">
+                                <span>Номер телефона</span>
+                                <input type="text" name="" id="" placeholder="+380636363636">
+                            </div>
+                            <div class="register-form-item">
+                                <span>Электронная почта</span>
+                                <input type="text" name="" id="" placeholder="admin@gmail.com">
+                            </div>
+                            <div class="registr-button">
+                                <a href="#">Зарегистрироваться</a>
+                            </div>
+                        </form>
+                        <div class="social-reg">
+                            <span>Войти через соцсети</span>
+                            <div class="social-links">
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-vk"></i></a>
+                                </div>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-login">
+                <div class="header-login-btn">
+                    <a href="#" class="popup-open-log"><i class="fas fa-sign-in-alt"></i> Войти</a>
+                </div>
+                <div class="popup-fade-log">
+                    <div class="popup-log">
+                        <a class="popup-close-log" href="#"><i class="fas fa-times"></i></a>
+                        <div class="popup-title">
+                            Вход
+                        </div>
+                        <form action="" class="login-form">
+                            <div class="login-form-item">
+                                <span>Логин, почта или телефон</span>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="login-form-item">
+                                <span>Пароль</span>
+                                <input type="password" name="" id="">
+                            </div>
+
+                            <div class="registr-button">
+                                <a href="#">Войти</a>
+                            </div>
+                        </form>
+                        <div class="login-forgot-links">
+                            <a href="">Не помню пароль</a>
+                            <a href="">Войти по смс</a>
+                        </div>
+                        <div class="social-reg">
+                            <span>Войти через соцсети</span>
+                            <div class="social-links">
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-vk"></i></a>
+                                </div>
+                                <div class="social-link">
+                                    <a href=""><i class="fab fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner terapeft-main">
+        <div class="container">
+            <div class="banner-box">
+                <div class="banner-text">
+                    <div class="banner-text-title">
+                        Подберем клиентов для интересной и эффективной работы
+                    </div>
+                    <div class="banner-text-desc">
+                        Мы поможем найти клиентов, которым вы сможете оказать наиболее
+        эффективную помощь. Это позволит строить с клиентами долгосрочные
+        отношения и оптимизировать ваш рабочий график
+                    </div>
+        
+                    <div class="terapeft-button">   
+                        <a href="#" class="terapeft-button-link">Присоедениться</a>
+                    </div>
+                </div>
+                <div class="banner-img">
+                    <img src="img/terapeft_main.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="workus">
+        <div class="container">
+            <div class="block-title">
+                <h3>Как работать с нами?</h3>
+            </div>
+    
+            <div class="workus-box">
+                <div class="workus-item">
+                    <span class="workus-item-number">1</span>
+                    <span class="workus-item-title">Заполните анкету</span>
+                    <span class="workus-item-desc">Расскажите нам подробно о себе, своём образовании, опыте консультирования и методах работы, чтобы мы подбирали подходящих и интересных клиентов</span>
+                </div>
+                <div class="workus-item">
+                    <span class="workus-item-number">2</span>
+                    <span class="workus-item-title">Заполните анкету</span>
+                    <span class="workus-item-desc">Расскажите нам подробно о себе, своём образовании, опыте консультирования и методах работы, чтобы мы подбирали подходящих и интересных клиентов</span>
+                </div>
+                <div class="workus-item">
+                    <span class="workus-item-number">3</span>
+                    <span class="workus-item-title">Заполните анкету</span>
+                    <span class="workus-item-desc">Расскажите нам подробно о себе, своём образовании, опыте консультирования и методах работы, чтобы мы подбирали подходящих и интересных клиентов</span>
+                </div>
+                <div class="workus-item">
+                    <span class="workus-item-number">4</span>
+                    <span class="workus-item-title">Заполните анкету</span>
+                    <span class="workus-item-desc">Расскажите нам подробно о себе, своём образовании, опыте консультирования и методах работы, чтобы мы подбирали подходящих и интересных клиентов</span>
+                </div>
+                <div class="workus-item">
+                    <span class="workus-item-number">5</span>
+                    <span class="workus-item-title">Заполните анкету</span>
+                    <span class="workus-item-desc">Расскажите нам подробно о себе, своём образовании, опыте консультирования и методах работы, чтобы мы подбирали подходящих и интересных клиентов</span>
+                </div>
+                <div class="workus-item">
+                    <span class="workus-item-number">6</span>
+                    <span class="workus-item-title">Заполните анкету</span>
+                    <span class="workus-item-desc">Расскажите нам подробно о себе, своём образовании, опыте консультирования и методах работы, чтобы мы подбирали подходящих и интересных клиентов</span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="benefit">
+        <div class="container">
+            <div class="block-title">
+                <h3>Выгода терапевта</h3>
+            </div>
+            <div class="benefit-box">
+
+                <div class="benefit-item pink">
+                    <span class="benefit-item-title">Индивидуальный подбор</span>
+                    <span class="benefit-item-desc">Мы подбираем клиентов с профилями и запросами, которые лучше всего подходят вашей специализации, опыту и предпочтениям. Наша методика подбора повышает вероятность хорошего контакта и глубокой работы с клиентом</span>
+                    <span class="benefit-item-number">01</span>
+                </div>
+                <div class="benefit-item blue">
+                    <span class="benefit-item-title">Индивидуальный подбор</span>
+                    <span class="benefit-item-desc">Мы подбираем клиентов с профилями и запросами, которые лучше всего подходят вашей специализации, опыту и предпочтениям. Наша методика подбора повышает вероятность хорошего контакта и глубокой работы с клиентом</span>
+                    <span class="benefit-item-number">02</span>
+                </div>
+                <div class="benefit-item orange">
+                    <span class="benefit-item-title">Индивидуальный подбор</span>
+                    <span class="benefit-item-desc">Мы подбираем клиентов с профилями и запросами, которые лучше всего подходят вашей специализации, опыту и предпочтениям. Наша методика подбора повышает вероятность хорошего контакта и глубокой работы с клиентом</span>
+                    <span class="benefit-item-number">03</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="workneed">
+        <div class="container">
+            <div class="block-title">
+                <h3>Условия сотрудничества с PsyPort</h3>
+            </div>
+            <p>За подбор каждого клиента мы берем стоимость двух сессий с клиентом: половину от первых четырех встреч.
+                Если клиент не пришёл на сессию, психотерапевт не платит сервису.</p>
+            
+            <div class="workneed-subtitle">
+                Чтобы работать с нами, вам нужно иметь :
+            </div>  
+
+            <div class="workneed-box">
+                <div class="workneed-item">
+                    <div class="workneed-item-img">
+                        <img src="img/workneed_1.png" alt="">
+                    </div>
+                    
+                    <div class="workneed-item-desc">Законченное высшее психологическое
+                        или медицинское образование</div>
+                </div>
+                <div class="workneed-item">
+                    <div class="workneed-item-img">
+                        <img src="img/workneed_2.png" alt="">
+                    </div>
+                    
+                    <div class="workneed-item-desc">Сертификат по одному из направлений
+                        психотерапии, обучение длительностью от 500 часов</div>
+                </div>
+                <div class="workneed-item">
+                    <div class="workneed-item-img">
+                        <img src="img/workneed_3.png" alt="">
+                    </div>
+                    
+                    <div class="workneed-item-desc">Опыт личной терапии от 100 часов</div>
+                </div>
+                <div class="workneed-item">
+                    <div class="workneed-item-img">
+                        <img src="img/workneed_4.png" alt="">
+                    </div>
+                    <div class="workneed-item-desc">Опыт супервизии от 30 часов, не менее 
+                        12 часов супервизии в год</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="benefits">
+
+        <div class="container">
+            <div class="block-title">
+                <h3>Преимущества работы с платформой</h3>
+            </div>
+            <div class="benefits-list">
+                <div class="benefits-list-item">
+                    <div class="benefits-list-item-img">
+                        <img src="img/shield.png" alt="">
+                    </div>
+                    <div class="benefits-list-item-desc">
+                        <h4>Удобно и безопасно</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="benefits-list-item">
+                    <div class="benefits-list-item-img">
+                        <img src="img/like.png" alt="">
+                    </div>
+                    <div class="benefits-list-item-desc">
+                        <h4>Просто и комфортно</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="benefits-list-item">
+                    <div class="benefits-list-item-img">
+                        <img src="img/trophy.png" alt="">
+                    </div>
+                    <div class="benefits-list-item-desc">
+                        <h4>Профессонально</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="benefits-list-item">
+                    <div class="benefits-list-item-img">
+                        <img src="img/idea.png" alt="">
+                    </div>
+                    <div class="benefits-list-item-desc">
+                        <h4>Доступно</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section class="request container">
+        <div class="block-title">
+            <h3>Отзывы</h3>
+        </div>
+
+        <div class="slider-request">
+            <div class="slider-request-item">
+                <div class="slider-request-item-head">
+                    <div class="slider-request-item-name">Васян</div>
+                    <div class="slider-request-item-rait">
+                        <div class="rateit" data-score="3"></div>
+                    </div>
+                    <div class="slider-request-item-date">06.09.2020</div>
+                </div>
+                <div class="slider-request-item-desc">
+                    <p>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании
+                        дальнейших направлений развития проекта. Практический опыт показывает, что дальнейшее развитие
+                        различных форм деятельности способствует подготовке и реализации всесторонне сбалансированных
+                        нововведений! </p>
+                    <p>Спасибо!</p>
+                </div>
+            </div>
+            <div class="slider-request-item">
+                <div class="slider-request-item-head">
+                    <div class="slider-request-item-name">Николай</div>
+                    <div class="slider-request-item-rait">
+                        <div class="rateit" data-score="4"></div>
+                    </div>
+                    <div class="slider-request-item-date">06.09.2020</div>
+                </div>
+                <div class="slider-request-item-desc">
+                    <p>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании
+                        дальнейших направлений развития проекта. Практический опыт показывает, что дальнейшее развитие
+                        различных форм деятельности способствует подготовке и реализации всесторонне сбалансированных
+                        нововведений! </p>
+                    <p>Спасибо!</p>
+                </div>
+            </div>
+            <div class="slider-request-item">
+                <div class="slider-request-item-head">
+                    <div class="slider-request-item-name">Потапыч</div>
+                    <div class="slider-request-item-rait">
+                        <div class="rateit" data-score="5"></div>
+                    </div>
+                    <div class="slider-request-item-date">06.09.2020</div>
+                </div>
+                <div class="slider-request-item-desc">
+                    <p>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании
+                        дальнейших направлений развития проекта. Практический опыт показывает, что дальнейшее развитие
+                        различных форм деятельности способствует подготовке и реализации всесторонне сбалансированных
+                        нововведений! </p>
+                    <p>Спасибо!</p>
+
+                </div>
+            </div>
+            <div class="slider-request-item">
+                <div class="slider-request-item-head">
+                    <div class="slider-request-item-name">Чика</div>
+                    <div class="slider-request-item-rait">
+                        <div class="rateit" data-score="2"></div>
+                    </div>
+                    <div class="slider-request-item-date">06.09.2020</div>
+                </div>
+                <div class="slider-request-item-desc">
+                    <p>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании
+                        дальнейших направлений развития проекта. Практический опыт показывает, что дальнейшее развитие
+                        различных форм деятельности способствует подготовке и реализации всесторонне сбалансированных
+                        нововведений! </p>
+                    <p>Спасибо!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

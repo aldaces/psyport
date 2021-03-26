@@ -8,7 +8,6 @@ body {
 
     font-family: MonsteratR, sans-serif;
     font-size: 14px;
-    background-image: url(../img/background.png);
     background-position-y: -150px;
     background-repeat: no-repeat;
     margin: 0;
@@ -459,17 +458,21 @@ input:focus {
 }
 
 .banner {
-    display: flex;
-    justify-content: space-between;
     margin-top: 20px;
     z-index: -10;
-    margin-bottom: -12%;
+    margin-bottom: 20px;
+    background: url(../img/terapeft_back.png    ) no-repeat;
+}
+
+.banner-box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .banner .banner-text {
-    align-self: flex-start;
+    align-self: center;
     color: #2f2f2f;
-    margin-top: 9%;
+    width: 50%;
 }
 
 .banner .banner-text .banner-text-title {
@@ -490,6 +493,12 @@ input:focus {
 }
 
 .banner .banner-img {
+    width: 50%;
+    align-self: flex-end;
+}
+
+.banner .banner-img img {
+    display: block;
     width: 100%;
 }
 
@@ -2405,4 +2414,177 @@ input[type="radio"]:checked+label {
 
 .messages-body-form input[type="file"] {
     display: none;
+}
+
+/* terapefts page */
+
+.terapeft-main {
+    height: 570px;
+}
+
+.terapeft-button {
+    width: 240px;
+    height: 48px;
+    background-color: #ff9593;
+    box-shadow: 2px 3px 16px 0px rgba(255,149,147,0.4);
+    border-radius: 24px;
+}
+
+.terapeft-button .terapeft-button-link {
+    display: block;
+    font-family: MonsteratBold;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 48px;
+}
+
+.workus {
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.workus .workus-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.workus .workus-box .workus-item {
+   position: relative;
+   width: 27%;
+   padding: 30px;
+}
+
+.workus .workus-box .workus-item span {
+    display: block;
+}
+
+.workus .workus-box .workus-item .workus-item-number {
+    position: absolute;
+    left: -25px;
+    top: 22px;
+    width: 36px;
+    height: 36px;
+    background-color: #65d7ed;
+    box-shadow: 1px 2px 16px 0px rgba(101,215,237,0.4);
+    border-radius: 50%;
+    font-family: MonsteratBold;
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+}
+
+.workus .workus-box .workus-item .workus-item-title{
+    font-size: 14px;
+    font-family: MonsteratBold;
+    margin-bottom: 20px;
+}
+
+.workus .workus-box .workus-item .workus-item-desc {
+    font-size: 12px;
+    color: #2f2f2f;
+    line-height: 18px;
+}
+
+.benefit {
+    margin: 30px auto;
+}
+
+.benefit .benefit-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit .benefit-box .benefit-item {
+    position: relative;
+    width: 32%;
+    height: 225px;
+    padding: 40px 35px 45px 68px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px 0px #f1f1f5;
+    border-radius: 10px;
+}
+
+.benefit .benefit-box .benefit-item:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f192";
+    position: absolute;
+    top: 17%;
+    left: 7%; 
+    font-size: 22px;
+}
+
+.benefit .benefit-box .benefit-item span {
+    display: block;
+}
+
+.benefit .benefit-box .benefit-item .benefit-item-title {
+    font-family: MonsteratBold;
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+}
+
+.benefit .benefit-box .benefit-item .benefit-item-desc {
+    font-size: 12px;
+    line-height: 18px;
+    color: #2f2f2f;
+    letter-spacing: -0.01em;
+}
+
+.benefit .benefit-box .benefit-item .benefit-item-number {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-family: MonsteratBold;
+    font-size: 14px;
+    color: #ededed;
+}
+
+.workneed {
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.workneed p {
+    width: 80%;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2f2f2f;
+}
+
+.workneed .workneed-subtitle {
+    background-color: #ff9593;
+    width: 34%;
+    height: 37px;
+    border-radius: 18.5px;
+    line-height: 37px;
+    color: #fff;
+    font-family: MonsteratBold;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.workneed .workneed-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.workneed .workneed-box .workneed-item {
+    width: 45%;
+    margin: 10px;
+    align-self: center;
+    display: flex;
+    align-content: center;
+    padding: 10px;
+}
+
+.workneed .workneed-box .workneed-item .workneed-item-desc{
+    align-self: center;
+    margin-left: 30px;
+    padding: 0 20px;
 }
