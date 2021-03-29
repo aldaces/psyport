@@ -26,6 +26,21 @@ input:focus {
     margin: auto;
 }
 
+.request-more-button {
+    display: block;
+    width: 160px;
+    height: 38px;
+    margin: 20px auto;
+    background-color: #65d7ed;
+    box-shadow: 2px 3px 16px 0px rgba(126,218,236,0.4);
+    border-radius: 19px;
+    text-align: center;
+    line-height: 39px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
 
 .header {
     display: flex;

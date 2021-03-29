@@ -171,6 +171,40 @@ $(document).ready(function ($) {
 		]
 	});
 
+	/* $('.slider-request').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		mobileFirst: true,
+		prevArrow: '<div class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i> </div>',
+		nextArrow: '<div class="slide-arrow next-arrow"> <i class="fas fa-chevron-right"></i> </div>',
+		responsive: [{
+				breakpoint: 320,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: false
+				}
+			},
+
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: false
+				}
+			}
+		]
+	}); */
+
+	$('.rateit').raty({
+		readOnly: true
+	});
+
+});
+
+$(document).ready(function ($) {
 	$('.slider-request').slick({
 		infinite: true,
 		slidesToShow: 2,
@@ -197,11 +231,6 @@ $(document).ready(function ($) {
 			}
 		]
 	});
-
-	$('.rateit').raty({
-		readOnly: true
-	});
-
 });
 
 
