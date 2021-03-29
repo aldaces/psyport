@@ -413,3 +413,45 @@ document.addEventListener('DOMContentLoaded', function() {
 		newsContent.text(newsText.slice(0, size) + ' ...');
 	}
   })
+
+  $(document)
+  .ready(function () {
+	  var variant = $('#uzz_1')
+		  .clone(true);
+	  $('#add_1')
+		  .click(function () {
+			  $(variant)
+				  .clone(true)
+				  .appendTo('#variants_1')
+				  .fadeIn('slow')
+				  .find("input[name*=name]")
+				  .focus();
+		  });
+	  $(document)
+		  .on('click', 'a.del_variant:not(:first)', function () {
+			  $(this)
+				  .parents(".control-group")
+				  .remove();
+		  });
+  });
+
+  $(document)
+  .ready(function () {
+	  var variant = $('#uzz_2')
+		  .clone(true);
+	  $('#add_2')
+		  .click(function () {
+			  $(variant)
+				  .clone(true)
+				  .appendTo('#variants_2')
+				  .fadeIn('slow')
+				  .find("input[name*=name]")
+				  .focus();
+		  });
+	  $(document)
+		  .on('click', 'a.del_variant:not(:first)', function () {
+			  $(this)
+				  .parents(".control-group")
+				  .remove();
+		  });
+  });

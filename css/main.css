@@ -1464,7 +1464,8 @@ input[type="radio"]:checked+label {
     width: 60%;
 }
 
-.data .data-form input {
+.data .data-form input[type=text] {
+    position: relative;
     width: 100%;
     height: 48px;
     border-radius: 10px;
@@ -2679,4 +2680,66 @@ span:last-child {
 .calendar {
     width: 100%;
 }
+
+.control-group .del_variant {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.control-group .controls {
+    position: relative;
+}
+
+#add_1, #add_2 {
+    color: #7edaec;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.sertificats .form-item-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sertificats .form-item-box .sertificats-add {
+    width: 22%;
+    margin: 10px;
+}
+
+.sertificats .form-item-box .sertificats-add-box {
+    height: 200px;
+    border: 1px solid #e2e7e9;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sertificats .form-item-box .sertificats-add-box i {
+    font-size: 34px;
+    color: #e2e7e9;
+    position:absolute;
+    width:100%;
+    top: 45%;
+    text-align: center;
+}
+
+.sertificats .form-item-box .addfile {
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #7edaec;
+    display: block;
+    margin-top: 25px;
+}
+
+.allclients {
+    display: block;
+    margin-top: 20px;
+    color: #7edaec;
+}
+
 
