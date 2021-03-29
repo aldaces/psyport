@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.raty.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/calendar.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src='https://www.youtube.com/iframe_api'></script>
+    <script src="js/common.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/locales-all.js"></script>
+
+    <title>Psy Port</title>
+
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header-logo">
+            <a href="#">
+                <img src="img/logo.svg" alt="" class="logo">
+            </a>
+
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-list">
+
+                <ul class="desctop">
+                    <li><a href="#">Терапевты</a></li>
+                    <li><a href="#">Стать терапевтом</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <img src="img/mob-menu.svg" alt="">
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li id="mobile-lang">
+                                <span><a href="#">Русский</a></span>
+                                <span>/</span>
+                                <span><a href="#" class="disable">Украинский</a></span>
+                            </li>
+                            <li><a href="#">Остаток на счету</a></li>
+                            <li><a href="#">Купить сессию</a></li>
+                            <li><a href="#">Сообщения</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-lang">
+                <div class="dropdown">
+                    <div class="dropbtn">Русский <i class="fas fa-chevron-down"></i></div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Украинский</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-profile">
+                <div class="dropdown">
+                    <div class="dropbtn"><i class="far fa-user"></i> Мой профиль <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Мои данные</a></li>
+                            <li><a href="#">Мое расписание</a></li>
+                            <li><a href="#">Мои сообщения</a></li>
+                            <li><a href="#">Мой терапевт</a></li>
+                            <li><a href="#">Мой счет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <section class="inquiry">
+        <div class="container">
+            <div class="block-title">
+                <h3>Запрос от нового клиента</h3>
+            </div>
+
+            <div class="inquiry-box">
+                <div class="inquiry-mess">
+                    <div class="inquiry-mess-foto">
+                        <img src="img/profile-ava.png" alt="">
+                        <div>
+                            <span>Елена Любарская</span>
+                            <span>32 года</span>
+                        </div>
+                    </div>
+                    <div class="inquiry-mess-text">
+                        Внутренние конфликты, связанные с необходимостью выбора (могут быть замечены через телесные
+                        симптомы, не имеющие медицинских подтверждений; постоянное фоновое напряжение, не проходящее
+                        и даже усиливающееся от отдыха).
+                    </div>
+                </div>
+                <div class="inquiry-data">
+                    <div class="inquiry-data-item">
+                        <div class="inquiry-data-item-title">Опыт</div>
+                        <div class="inquiry-data-item-text">От 5 лет</div>
+                    </div>
+                    <div class="inquiry-data-item">
+                        <div class="inquiry-data-item-title">Опыт</div>
+                        <div class="inquiry-data-item-text">От 5 лет</div>
+                    </div>
+                    <div class="inquiry-data-item">
+                        <div class="inquiry-data-item-title">Опыт</div>
+                        <div class="inquiry-data-item-text">От 5 лет</div>
+                    </div>
+                    <div class="inquiry-data-item">
+                        <div class="inquiry-data-item-title">Опыт</div>
+                        <div class="inquiry-data-item-text">От 5 лет</div>
+                    </div>
+                    <div class="inquiry-data-item">
+                        <div class="inquiry-data-item-title">Опыт</div>
+                        <div class="inquiry-data-item-text">От 5 лет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="selection container">
+       
+        <div class="block-title">
+            <h3>Расписание</h3>
+        </div>
+
+        <div class="selection-group">
+            <div id="calendar" class="calendar">
+            
+            </div>
+            <div class="profile-group">
+                <div class="selection-profile">
+                    <div class="profile-title">
+                        <img src="img/profile-ava.png" alt="">
+                        <div class="profile-title-name">Елена Любарская
+                            <span class="frofile-title-age"> 32 года</span>
+                        </div>
+
+                    </div>
+                    <div class="profile-menu-self">
+                        <ul>
+                            <li><a href="">Мои данные</a></li>
+                            <li><a href="">Мое расписание</a></li>
+                            <li><a href="">Мои сообщения <span class="massage-count">(2)</span></a></li>
+                            <li><a href="">Мой терапевт</a></li>
+                            <li><a href="">Мой счет</a></li>
+                        </ul>
+                    </div>
+                    <div class="profile-menu-gen">
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Новости</a></li>
+                            <li><a href="">Связаться с нами</a></li>
+                            <li><a href="">Выйти</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-video">
+                    <div class="video-block">
+                        <span>Видео как пользоваться</span>
+                        <img src="img/profile-video.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="selection-button-group">
+            <div class="selection-button">
+                <a href="">Подобрать</a>
+            </div>
+            <span class="selection-button-desc">Нажимая «Подобрать», вы принимаете
+                Условия пользования сайтом
+                и Обработки персональных данных</span>
+        </div>
+    </section>
+
+    <section class="bridge container">
+        <div class="block-title">
+            <h3>Видео-мост</h3>
+        </div>
+        <div class="bridge-video">
+            <img src="img/bridge.png" alt="">
+        </div>
+         
+    </section>
+
+    <section class="transaction container">
+       
+        <div class="block-title">
+            <h3>История транзакций</h3>
+        </div>
+        <div class="transaction-block">
+            <div class="transaction-block-item">
+                <div class="transaction-summary width">
+                    <div><i class="fas fa-caret-up"></i></div>
+                    <div>ID транзакции:  <span>584H2947JL37352</span></div>
+                    <div>Дата и время:  <span>19.05.2020  16:28</span></div>
+                    <div>Сумма:  <span>+ 2 500 грн</span></div>
+                </div>
+                <div class="transaction-total">
+                    <div>Остаток на счету</div>
+                    <div>2 500 грн</div>
+                </div>
+            </div>
+            <div class="transaction-block-item">
+                <div class="transaction-summary width">
+                    <div><i class="fas fa-caret-down"></i></div>
+                    <div>ID транзакции:  <span>584H2947JL37352</span></div>
+                    <div>Дата и время:  <span>19.05.2020  16:28</span></div>
+                    <div>Сумма:  <span>- 1 000 грн</span></div>
+                </div>
+                <div class="transaction-total">
+                    <div>Остаток на счету</div>
+                    <div>1 500 грн</div>
+                </div>
+            </div>
+            <div class="transaction-block-item">
+                <div class="transaction-summary width">
+                    <div><i class="fas fa-caret-up"></i></div>
+                    <div>ID транзакции:  <span>584H2947JL37352</span></div>
+                    <div>Дата и время:  <span>19.05.2020  16:28</span></div>
+                    <div>Сумма:  <span>+ 500 грн</span></div>
+                </div>
+                <div class="transaction-total">
+                    <div>Остаток на счету</div>
+                    <div>2 000 грн</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news container">
+        <div class="block-title">
+            <h3>Новости</h3>
+        </div>
+        <div class="news-slider">
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news1.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар "Эпоха коронавируса: как справляться с тревогой и стрессом?"
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news2.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар для подростков и их родителей: «Как разобраться с непростыми переживаниями.»
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+
+
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news3.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар: "Как разобраться в противоречивых чувствах и выбрать для себя счастливые отношения"
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news2.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар для подростков и их родителей: «Как разобраться с непростыми переживаниями.»
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news1.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар "Эпоха коронавируса: как справляться с тревогой и стрессом?"
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+            <div class="news-slider-item">
+                <div class="news-img">
+                    <img src="img/news3.png" alt="">
+                </div>
+                <div class="news-title">
+                    Вебинар: "Как разобраться в противоречивых чувствах и выбрать для себя счастливые отношения"
+                </div>
+                <div class="news-foter">
+                    <div class="news-count">
+                        <div><i class="far fa-eye"></i>1422</div>
+                        <div><i class="fas fa-comment"></i>18</div>
+                    </div>
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-row container">
+            <div class="footer-logo">
+                <a href="#"><img src="img/footer-logo.svg" alt=""></a>
+                
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li> <a href="#">Терапевты</a></li>
+                    <li> <a href="#">Стать терапевтом</a></li>
+                    <li> <a href="#">FAQ</a></li>
+                </ul>                  
+            </div>
+            <div class="footer-contact">
+                <div class="footer-contact-email">
+                   <span>НАШ EMAIL</span> 
+                   <span>info@ateliesaun.ua</span> 
+                </div>
+                <div class="footer-contact-phone">
+                    <span>ТЕЛЕФОН</span>
+                    <span>8-800-775-95-19</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-privacy">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

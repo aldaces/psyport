@@ -2603,3 +2603,80 @@ input[type="radio"]:checked+label {
     margin-left: 30px;
     padding: 0 20px;
 }
+
+/* terapeft-profile page */
+
+.inquiry-box {
+    height: 357px;
+    box-shadow: 0px 0px 18px 0px #f1f1f5;
+    border-radius: 8px;
+    padding: 60px;
+}
+
+.inquiry-box .inquiry-mess {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inquiry-box .inquiry-mess .inquiry-mess-foto {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.inquiry-box .inquiry-mess .inquiry-mess-foto span {
+    display: block;
+}
+
+.inquiry-box .inquiry-mess .inquiry-mess-foto 
+span:first-child {
+    font-family: MonsteratBlack;
+    font-size: 16px;
+}
+
+.inquiry-box .inquiry-mess .inquiry-mess-foto 
+span:last-child {
+    font-size: 12px;
+}
+
+.inquiry-box .inquiry-mess .inquiry-mess-foto > div {
+    margin: 0 30px;
+}
+
+.inquiry-box .inquiry-mess .inquiry-mess-text {
+    width: 75%;
+    border: 1px solid #e2e7e9;
+    border-radius: 10px;
+    padding: 25px 60px 25px 25px;
+}
+
+.inquiry-box .inquiry-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+}
+
+.inquiry-box .inquiry-data .inquiry-data-item
+.inquiry-data-item-title {
+    font-family: MonsteratBold;
+    font-size: 18px;
+}
+
+.inquiry-box .inquiry-data .inquiry-data-item
+.inquiry-data-item-text {
+    width: 165px;
+    height: 39px;
+    background-color: #7edaed;
+    box-shadow: 0px 0px 18px 0px #7edaec;
+    border-radius: 19px;
+    text-align: center;
+    line-height: 39px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.calendar {
+    width: 100%;
+}
+
