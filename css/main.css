@@ -2742,4 +2742,99 @@ input[type="file"] {
     color: #7edaec;
 }
 
+.myclients {
+    margin: 50px auto;
+}
+
+.myclients .myclients-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.myclients .myclients-item {
+    width: 30%;
+    height: 586px;
+    box-shadow: 0px 0px 18px 0px #f1f1f5;
+    border-radius: 8px;
+    position: relative;
+    padding: 40px 45px;
+    margin: 20px auto;
+}
+
+.myclients .myclients-item .terapeft {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myclients .myclients-item .terapeft-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #e2e7e9;
+    font-size: 20px;
+}
+
+.myclients .myclients-item .terapeft-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myclients .myclients-item .terapeft-title
+.terapeft-foto img {
+    display: block;
+    margin-right: 30px;
+}
+
+.myclients .myclients-item .terapeft-title 
+.terapeft-name span{
+    display: block;
+}
+
+.myclients .myclients-item .terapeft-title 
+.terapeft-name span:first-child {
+    font-size: 18px;
+    font-family: MonsteratBlack;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+}
+
+.myclients .myclients-item .terapeft-desc {
+    margin: 20px auto;
+}
+
+.myclients .myclients-item .terapeft-desc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #2f2f2f;
+}
+
+.myclients .myclients-item .terapeft-desc ul li {
+    margin: 20px auto;
+}
+
+
+.myclients .myclients-item .terapeft-button {
+    width: 268px;
+    margin: 20px auto;
+
+}
+
+.myclients .myclients-item .calendar-button {
+    background-color: #65d7ed;
+}
+
+.myclients .myclients-item .terapeft-button a {
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-family: MonsteratBold;
+}
 
