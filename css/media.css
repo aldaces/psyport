@@ -210,6 +210,7 @@
         top: 0;
         margin-left: 0;
         width: 100%;
+        overflow: scroll;
     }
     
     .popup-pick {
@@ -231,6 +232,7 @@
     .banner .banner-text .banner-text-title {
         width: 80%;
         margin: 10px auto;
+        text-align: center;
     }
 
     .current-video {
@@ -393,6 +395,10 @@
 
     .faq .faq-list, .faq .faq-other {
         width: 100%;
+    }
+
+    .form-acc-footer .form-acc-button {
+        width: 40%;
     }
 
     .myterapeft .myterapeft-blocks .myterapeft-dip {

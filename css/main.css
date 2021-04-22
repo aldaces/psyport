@@ -475,7 +475,6 @@ input:focus {
 .banner {
     margin-top: 20px;
     z-index: -10;
-    margin-bottom: 20px;
     background: url(../img/terapeft_back.png    ) no-repeat;
 }
 
@@ -1065,6 +1064,7 @@ input[type="radio"]:checked+label {
 .footer {
     background-color: #65d7ed;
     max-width: 1920px;
+    height: 120px;
 }
 
 .footer-privacy {
@@ -1091,6 +1091,7 @@ input[type="radio"]:checked+label {
 
 .footer .footer-links ul {
     list-style: none;
+    padding: 0;
 }
 
 .footer .footer-links ul li {
