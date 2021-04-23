@@ -475,7 +475,7 @@ input:focus {
 .banner {
     margin-top: 20px;
     z-index: -10;
-    background: url(../img/terapeft_back.png    ) no-repeat;
+    background: url(../img/terapeft_back.png) repeat center;
 }
 
 .banner-box {
