@@ -123,12 +123,14 @@
     .header {
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px; 
     }
 
     .header-logo {
         width: 100%;
         text-align: center;
+        margin: 15px auto;
     }
 
     .header-menu-list .desctop {
@@ -162,7 +164,7 @@
     }
 
     .dropdown-content a {
-        padding: 0;
+        padding: 10px;
     }
 
     a.disable {
@@ -224,14 +226,13 @@
     .banner {
         margin-bottom: 30px;
         justify-content: center;
-        margin-top: 15%;
         flex-direction: column-reverse;
     }
 
     .banner .banner-text .banner-text-desc,
     .banner .banner-text .banner-text-title {
         width: 80%;
-        margin: 10px auto;
+        margin: 15px auto;
         text-align: center;
     }
 
@@ -265,9 +266,12 @@
         width: 100%;
     }
 
+    .current-video .current-video-desc {
+        width: 100%;
+    }
+
     .current-video .current-video-box .thumbnail-container {
         border-radius: 10px;
-        margin-bottom: 20px;
     }
 
     .block-title {
@@ -284,7 +288,7 @@
     }
 
     .benefits-list .benefits-list-item .benefits-list-item-img {
-        width: 90px;
+        width: 50%;
     }
 
     .subscribe .subscribe-form-item span {
@@ -374,7 +378,7 @@
     .selection .selection-group {
         flex-wrap: wrap;
         justify-content: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .profile-group {
@@ -437,12 +441,9 @@
     }
 
     .banner .banner-img {
-        margin: 0 auto;
-    }
-
-    .terapeft-button {
-        margin: 0 auto;
-    }
+        margin: 15px auto;
+        width: 100%;
+    }   
 
     .benefit .benefit-box {
         flex-wrap: wrap;
@@ -471,7 +472,28 @@
         width: 100%;
     }
 
+    .workneed p {
+        width: 100%;
+        text-align: center;
+    }
 
+    .workus {
+        margin: 15px auto;
+    }
+
+    .workus .workus-box .workus-item .workus-item-number {
+        left: -15px;
+    }
+
+    .faq .faq-list ul.accordion-list li h3 {
+        padding-right: 20px;
+    }
+
+    .transactions .transactions-hist .block-title {
+        display: block;
+    }
+
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     body {
@@ -555,7 +577,7 @@
     }
 
     .thumbnail-container {
-        width: 77%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -564,7 +586,12 @@
     }
 
     .current-video .current-video-desc>div {
-        margin: 40px 20px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .current-video .current-video-box .current-start-video {
+        left: 34%;
     }
 
     .slider-video .slide-arrow {
@@ -576,7 +603,15 @@
     }
 
     .slider-video .prev-arrow {
-        right: 50px;
+        right: 80px;
+        bottom: -30px;
+    }
+
+    .slider-video .slide-arrow {
+        bottom: 0;
+        top: 107%;
+        left: 12%;
+        margin: 0 auto;
     }
 
     .slider-request .slider-request-item {
@@ -588,15 +623,22 @@
     }
 
     .notes .notes-slider .slide-arrow {
-        margin-top: -60px;
+        top: 108%;
+        z-index: 1111;
+    }
+
+    .notes .notes-slider .prev-arrow {
+        left: 0;
     }
 
     .notifications-form > div {
-        flex: 0 0 100%;
+        flex: 0 0 90%;
+        margin: 10px auto;
     }
 
     .notifications .form-ways > div {
-        flex: 0 0 100%;
+        flex: 0 0 90%;
+        margin: 10px auto;
     }
 
     .notifications .form-ways {
@@ -607,7 +649,21 @@
     }
 
     .slider-request .slide-arrow {
-        margin-top: -50px;
+        top: 100%;
+        left: 12%;
+        margin: 0 auto;
+    }
+
+    .slider-request .prev-arrow {
+        right: 90px;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+    .footer-logo {
+        margin-top: 20px;
     }
 
     .footer .footer-links ul {
@@ -685,6 +741,7 @@
     
     .workneed {
         padding: 15px;
+        margin: 0 auto;
     }
 
     .workneed .workneed-subtitle {
@@ -698,10 +755,110 @@
 
     .inquiry-box .inquiry-mess .inquiry-mess-foto {
         width: 100%;
+        padding: 30px;
+    }
+
+    .inquiry-box {
+        padding: 0;
     }
 
     .inquiry-box .inquiry-mess .inquiry-mess-text {
-        width: 100%;
-        margin-top: 35px;
+        width: 90%;
+        margin: 0 auto;
     }
+
+    .inquiry-box .inquiry-data .inquiry-data-item {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .inquiry-box .inquiry-data .inquiry-data-item .inquiry-data-item-text {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .inquiry-box .inquiry-data .inquiry-data-item .inquiry-data-item-checkbox {
+        margin: 30px auto;
+    }
+
+    .inquiry-box .inquiry-data .inquiry-data-item .inquiry-data-item-input {
+        margin: 30px auto;
+    }
+
+    .inquiry-input-text {
+        margin-top: 0;
+        width: 90%;
+    }
+
+    .benefits {
+        margin: 0 auto;
+    }
+
+    .transaction-summary div {
+        margin-bottom: 10px;
+    }
+
+    .news-slider .slide-arrow {
+        top: 115%;
+        right: 43%;
+    }
+
+    .news-slider .prev-arrow {
+        right: 53%;
+    }
+
+    .sertificats .form-item-box {
+        justify-content: center;
+    }
+
+    .data .data-form .button {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .dropbtn {
+        color: #65d7ed;
+    }
+
+    .messages-block .messages-contacts .messages-block-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .messages-block .messages-contacts 
+    .messages-block-title i {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .messages-block .messages-contacts .messages-block-list ul {
+        margin: 0;
+        padding: 0;
+    }
+    .messages-block .messages-contacts .messages-block-list ul li {
+        text-align: center;
+    }
+
+    .messages-body .messages-body-title {
+        align-items: center;
+    }
+
+    .messages-body .messages-body-title .messages-body-title-group {
+        padding: 0;
+    }
+
+    .messages-body .messages-body-list {
+        flex-wrap: wrap;
+    }
+
+    .messages-body .messages-body-list .messages-body-list-names {
+        width: 100%;
+    }
+    .messages-body .messages-body-list .messages-body-list-messadge {
+        width: 100%;
+    }
+
 }}

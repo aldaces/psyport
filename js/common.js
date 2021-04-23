@@ -201,7 +201,12 @@ $(document).ready(function ($) {
 	$('.rateit').raty({
 		readOnly: true
 	});
+});
 
+$(document).ready(function ($) {
+	$('.rateit-ter').raty({
+		readOnly: true
+	});
 });
 
 $(document).ready(function ($) {
@@ -209,7 +214,9 @@ $(document).ready(function ($) {
 		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
-		mobileFirst: true,
+		slidesPerRow: 2,
+		centerMode: false,
+		mobileFirst: false,
 		prevArrow: '<div class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i> </div>',
 		nextArrow: '<div class="slide-arrow next-arrow"> <i class="fas fa-chevron-right"></i> </div>',
 		responsive: [{
@@ -224,7 +231,20 @@ $(document).ready(function ($) {
 			{
 				breakpoint: 992,
 				settings: {
+					slidesToShow: 1,
+					slidesPerRow: 2,
+					slidesToScroll: 1,
+					adaptiveHeight: true,
+					centerMode: false,
+					rows: 1
+				}
+			},
+			
+			{
+				breakpoint: 1200,
+				settings: {
 					slidesToShow: 2,
+					slidesPerRow: 2,
 					slidesToScroll: 1,
 					centerMode: false
 				}
@@ -256,7 +276,7 @@ $(document).ready(function ($) {
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
-					centerMode: false
+					centerMode: false,
 				}
 			},
 			{
@@ -277,6 +297,7 @@ $(document).ready(function ($) {
 		slidesToScroll: 6,
 		dots: false,
 		rows: 2,
+		dots: true,
 		mobileFirst: true,
 		prevArrow: '<div class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i> </div>',
 		nextArrow: '<div class="slide-arrow next-arrow"> <i class="fas fa-chevron-right"></i> </div>',

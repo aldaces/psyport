@@ -1149,11 +1149,12 @@ input[type="radio"]:checked+label {
     background-color: #ffffff;
     margin-left: 30px;
     padding: 35px;
+    margin-top: -60px;
 }
 
 .form-item-title {
     font-size: 18px;
-    font-family: MonsteratR;
+    font-family: MonsteratBlack, sans-serif;
     font-weight: 700;
     color: #2f2f2f;
     margin: 25px 0;
@@ -1315,10 +1316,6 @@ input[type="radio"]:checked+label {
     text-align: center;
 }
 
-.transaction {
-    margin: 80px auto;
-}
-
 
 .transaction-block {
     display: flex;
@@ -1343,6 +1340,7 @@ input[type="radio"]:checked+label {
 .transaction-summary .fa-caret-up {
     color: #ffc282;
     font-size: 30px;
+    margin-right: 5px;
 }
 
 
@@ -1517,7 +1515,7 @@ input[type="radio"]:checked+label {
     box-shadow: 0 0 18px #f1f1f5;
     border-radius: 8px;
     background-color: #ffffff;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 40px 45px;
     display: flex;
     flex-direction: column;
@@ -1613,6 +1611,49 @@ input[type="radio"]:checked+label {
     cursor: pointer;
 }
 
+.notes .notes-slider .slick-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+} 
+
+.notes .notes-slider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.notes .notes-slider .slick-dots li button {
+    display: none;
+}
+
+.notes .notes-slider .slick-dots li::before {
+    transition: all .5s;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid #65d7ed;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.notes .notes-slider .slick-dots li.slick-active::before {
+    top: 0;
+    width: 15px;
+    height: 15px;
+    margin-left: -2px;
+    background-color: #65d7ed;
+}
+
+
 .notes .notes-slider .slide-arrow i {
     padding-left: 8px;
 }
@@ -1627,12 +1668,14 @@ input[type="radio"]:checked+label {
     background-color: #ffffff;
     cursor: pointer;
     padding: 25px 25px 25px 60px;
+    margin: 10px;
 }
 
 .notes .notes-slider .notes-item .notes-item-title {
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .notes .notes-slider .notes-item .notes-item-title::before {
@@ -1664,12 +1707,19 @@ input[type="radio"]:checked+label {
     font-size: 18px;
 }
 
-.notes .notes-slider .notes-item .notes-item-title span:last-child {
+.notes .notes-slider .notes-item .notes-item-title 
+.notes-item-title-date {
     color: #c3c7c9;
     font-size: 10px;
+    display: flex;
 }
 
-.notifications>div:first-child {
+.notes .notes-slider .notes-item .notes-item-title 
+.notes-item-title-date span {
+    margin-right: 10px;
+}
+
+.notifications > div:first-child {
     padding-bottom: 40px;
     border-bottom: 1px solid #e2e7e9;
 }
@@ -1819,6 +1869,10 @@ input[type="radio"]:checked+label {
     width: 76%;
 }
 
+.transactions .transactions-hist .block-title {
+    display: none;
+}
+
 .transactions .transactions-hist-list div {
     margin: 30px 0;
 }
@@ -1951,7 +2005,7 @@ input[type="radio"]:checked+label {
     content: "\f078";
     font-family: "Font Awesome 5 Free";
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -2174,7 +2228,7 @@ input[type="radio"]:checked+label {
 .contacts .contact-block .contact-form .button {
     width: 160px;
     height: 40px;
-    background-color: #ff9593;
+    background-color: #65d7ed;
     border-radius: 50px;
 }
 
@@ -2264,6 +2318,11 @@ input[type="radio"]:checked+label {
     color: #2f2f2f;
     padding-left: 36px;
     line-height: 46px;
+}
+
+.messages-block .messages-contacts 
+.messages-block-title i {
+    display: none;
 }
 
 .messages-block .messages-contacts 
@@ -2435,9 +2494,9 @@ input[type="radio"]:checked+label {
 
 /* terapefts page */
 
-.terapeft-main {
+/* .terapeft-main {
     height: 570px;
-}
+} */
 
 .terapeft-button {
     width: 240px;
@@ -2675,6 +2734,35 @@ span:last-child {
     line-height: 39px;
     color: #fff;
     margin-top: 30px;
+}
+
+.inquiry-box .inquiry-data .inquiry-data-item
+.inquiry-data-item-checkbox {
+    font-size: 18px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.inquiry-box .inquiry-data .inquiry-data-item
+.inquiry-data-item-checkbox label {
+    display: block;
+}
+
+.inquiry-input-check {
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.inquiry-input-text {
+    height: 39px;
+    width: 165px;
+    margin-top: 30px;
+    border-radius: 2px;
+    border: 1px solid #696969;
+    border-radius: 10px;
 }
 
 .calendar {
