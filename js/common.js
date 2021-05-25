@@ -211,6 +211,8 @@ $(document).ready(function ($) {
 
 $(document).ready(function ($) {
 	$('.slider-request').slick({
+		dots: true,
+		// dotsClass: 'slider-dots',
 		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
@@ -346,6 +348,19 @@ $(document).ready(function () {
 	});
 });
 
+
+$(document).ready(function ($) { 
+	$(".messages-block-title").click(function () {
+		$header = $(this);
+		$content = $header.next();
+		$content.slideToggle(500, function () {
+			$header.text(function () {
+				return
+			});
+		});
+	
+	});
+ });
 
 document.addEventListener('DOMContentLoaded', function() {
     var initialLocaleCode = 'ru';

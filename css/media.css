@@ -81,7 +81,16 @@
 
     .messages-block .messages-contacts {
         flex: 0 0 100%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+    }
+
+    .messages-block .messages-contacts i {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .messages-block .messages-contacts i:first-child {
+        color: #65d7ed;
     }
 
     .messages-body {
@@ -173,12 +182,8 @@
         color: #888!important;
     }
 
-    .dropdown-content {
-        width: 200px;
-    }
-
     .header-menu {
-        font-size: 14px;
+        font-size: 18px;
         font-family: MonsteratBold;
     }
 
@@ -198,7 +203,8 @@
         margin-bottom: 1px;
     }
 
-    .header-menu-list ul li {
+    .header-menu-list ul li,
+    .header-profile ul li {
         margin: 5px;
         padding: 9px
     }
@@ -300,6 +306,10 @@
         width: 100%;
     }
 
+    .footer {
+        height: 100%;
+    }
+
     .footer .footer-row {
         flex-wrap: wrap;
     }
@@ -312,6 +322,7 @@
 
     .footer-logo, .footer-links {
         flex: 0 0 100%;
+        margin-top: 10px;
     }
 
     .footer .footer-contact {
@@ -369,6 +380,10 @@
     .selection .selection-group {
         flex-wrap: wrap;
     }
+
+    .data .data-form-group, .data .data-foto {
+        width: 100%;
+    }
     
 }
 
@@ -378,7 +393,8 @@
     .selection .selection-group {
         flex-wrap: wrap;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     .profile-group {
@@ -426,10 +442,6 @@
 
     .data .data-form {
         flex-wrap: wrap;
-    }
-
-    .data .data-form-group, .data .data-foto {
-        width: 100%;
     }
 
     .banner-box {
@@ -488,6 +500,28 @@
     .faq .faq-list ul.accordion-list li h3 {
         padding-right: 20px;
     }
+    .mybill {
+        margin: 0 auto;
+    }
+
+    .data .data-form .button {
+        width: 70%;
+        margin: 40px auto;
+    }
+
+    .sertificats .form-item-box {
+        justify-content: center;
+    }
+
+    .notifications-form {
+        justify-content: flex-start;
+    }
+
+    .notifications .button {
+        width: 70%;
+        margin: 20px auto;
+    }
+
 
     .transactions .transactions-hist .block-title {
         display: block;
@@ -632,13 +666,11 @@
     }
 
     .notifications-form > div {
-        flex: 0 0 90%;
-        margin: 10px auto;
+        flex: 0 0 70%;
     }
 
     .notifications .form-ways > div {
-        flex: 0 0 90%;
-        margin: 10px auto;
+        flex: 0 0 50%;
     }
 
     .notifications .form-ways {
@@ -714,9 +746,13 @@
     .transaction-summary {
         flex-wrap: wrap;
         width: 100%;
-        padding: 15px;
-        margin-bottom: 10px;
         justify-content: center;
+    }
+
+    .transaction-summary-item {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
     }
 
     .transaction-block .transaction-block-item .transaction-total {
@@ -725,10 +761,6 @@
 
     .contact-links .contact-links-num, .contact-links .contact-links-soc {
         width: 100%;
-    }
-
-    .transactions .transactions-hist-list div {
-        margin: 20px 5px;
     }
 
     .myclients .myclients-item {
@@ -860,4 +892,17 @@
     .messages-body .messages-body-list .messages-body-list-messadge {
         width: 100%;
     }
-}}
+
+    .transactions .transactions-hist .button {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    .data .data-form .button {
+        width: 90%;
+    }
+
+    .notifications .button {
+        width: 90%;
+    }
+}

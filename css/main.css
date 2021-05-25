@@ -26,6 +26,31 @@ input:focus {
     margin: auto;
 }
 
+.slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.slick-dots li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #65d7ed;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.slick-dots li button { 
+    font-size: 0;
+ }
+
+ .slick-dots .slick-active {
+     background-color: #65d7ed;
+ }
+
 .request-more-button {
     display: block;
     width: 160px;
@@ -54,6 +79,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    width: 100%;
 }
 
 .header-lang,
@@ -116,20 +142,21 @@ input:focus {
 .dropdown {
     position: relative;
     display: inline-block;
+    color: #65d7ed;
 }
 
 .dropbtn {
-    padding: 5px;
+    padding: 15px;
     cursor: pointer;
 }
 
 .dropdown-content {
-    width: 140px;
     display: none;
     position: absolute;
     box-shadow: 0 0 10px #f1f1f5;
     border-radius: 8px;
     background-color: #ffffff;
+    z-index: 10;
 }
 
 .dropbtn::after {
@@ -1456,6 +1483,7 @@ input[type="radio"]:checked+label {
 .data .data-form {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 50px;
 }
 
@@ -1495,7 +1523,7 @@ input[type="radio"]:checked+label {
     text-align: center;
     position: relative;
     height: 100%;
-    width: 40%;
+    width: 30%;
 }
 
 .data .data-foto img {
@@ -1511,7 +1539,6 @@ input[type="radio"]:checked+label {
 }
 
 .data .terapeft {
-    width: 70%;
     box-shadow: 0 0 18px #f1f1f5;
     border-radius: 8px;
     background-color: #ffffff;
@@ -1525,12 +1552,19 @@ input[type="radio"]:checked+label {
 .data .terapeft .terapeft-title {
     display: flex;
     text-align: left;
-    justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.data .terapeft .terapeft-title .terapeft-foto {
+    margin-right: 25px;
 }
 
 .data .terapeft .terapeft-title .terapeft-name {
-    margin-left: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .data .terapeft .terapeft-title .terapeft-name span {
@@ -1540,9 +1574,8 @@ input[type="radio"]:checked+label {
 .data .terapeft .terapeft-title .terapeft-name span:first-child {
     font-size: 18px;
     color: #2f2f2f;
-    height: 35px;
     font-family: MonsteratBlack;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .data .terapeft .terapeft-title .terapeft-name span:last-child {
@@ -1731,12 +1764,12 @@ input[type="radio"]:checked+label {
     justify-content: space-between;
 }
 
-.notifications-form>div {
+.notifications-form > div {
     display: flex;
     flex-basis: calc(25% - 40px);
     justify-content: center;
     flex-direction: column;
-    margin: 15px 0;
+    margin: 15px;
 }
 
 .notifications .form-ways {
@@ -1869,12 +1902,9 @@ input[type="radio"]:checked+label {
     width: 76%;
 }
 
-.transactions .transactions-hist .block-title {
-    display: none;
-}
-
-.transactions .transactions-hist-list div {
-    margin: 30px 0;
+.transactions .transactions-hist-list .transaction-summary {
+    margin-bottom: 10px;
+    padding: 40px;
 }
 
 .transactions .transactions-hist .button {
@@ -1894,10 +1924,6 @@ input[type="radio"]:checked+label {
     color: #ffffff;
     text-decoration: none;
     line-height: 38px;
-}
-
-.transactions .transactions-total {
-    margin-top: 30px;
 }
 
 .transactions .transactions-total-sum {
@@ -2825,9 +2851,14 @@ input[type="file"] {
 }
 
 .allclients {
-    display: block;
+    display: inline-block;
     margin-top: 20px;
     color: #7edaec;
+}
+
+.allclients i {
+    display: inline-block;
+    margin-left: 7px;
 }
 
 .myclients {
