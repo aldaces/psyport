@@ -211,8 +211,6 @@ $(document).ready(function ($) {
 
 $(document).ready(function ($) {
 	$('.slider-request').slick({
-		dots: true,
-		// dotsClass: 'slider-dots',
 		infinite: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,

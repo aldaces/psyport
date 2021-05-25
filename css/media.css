@@ -382,7 +382,8 @@
     }
 
     .data .data-form-group, .data .data-foto {
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
     }
     
 }
@@ -534,8 +535,8 @@
         margin: 0 5px;
     }
 
-    .header-menu {
-        flex-wrap: wrap;  
+    .header-menu > div {
+        width: 30%;
     }
 
     .header-lang {
@@ -657,7 +658,7 @@
     }
 
     .notes .notes-slider .slide-arrow {
-        top: 108%;
+        top: 102%;
         z-index: 1111;
     }
 
@@ -671,11 +672,11 @@
 
     .notifications .form-ways > div {
         flex: 0 0 50%;
+        padding: 0 15px;
     }
 
     .notifications .form-ways {
         width: 100%;
-        flex: 0 0 100%;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
@@ -904,5 +905,18 @@
 
     .notifications .button {
         width: 90%;
+    }
+
+    .form-item-title {
+        text-align: center;
+    }
+
+    .selection-profile .profile-title {
+        justify-content: flex-start;
+    }
+
+    .terapeft-button {
+        width: 90%;
+        margin: 0 auto;
     }
 }
