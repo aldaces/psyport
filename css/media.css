@@ -419,10 +419,6 @@
         width: 100%;
     }
 
-    .form-acc-footer .form-acc-button {
-        width: 40%;
-    }
-
     .myterapeft .myterapeft-blocks .myterapeft-dip {
         justify-content: center;
     }
@@ -528,6 +524,17 @@
     .transactions .transactions-hist .block-title {
         display: block;
     }
+    .form-acc-footer .form-acc-button button {
+        width: 40%;
+    }
+
+    .form-acc-footer .form-acc-footer-steps {
+        width: 40%;
+    }
+
+    .step-link {
+        width: 100%;
+    }
 
 }
 /* Extra Small Devices, Phones */
@@ -556,6 +563,45 @@
         width: 80%;
         margin: 10px auto;
         font-size: 28px;
+    }
+
+    .form-acc-footer .form-acc-footer-steps {
+        font-size: 10px;
+    }
+
+    .popup-title {
+        font-size: 14px;
+    }
+
+    .popup-subtitle {
+        font-size: 12px;
+    }
+
+    .form-acc-footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-acc-footer .form-acc-button button {
+        width: 100%;
+    }
+
+    .form-acc-footer .form-acc-footer-steps {
+        width: 100%;
+    }
+
+    .step-link {
+        flex-direction: column;
+    }
+
+
+    .box-acc-popup .acc-item a {
+        padding: 10px 20px;
+    }
+
+    .box-acc-popup .acc-title .acc-spoiler {
+        font-size: 12px;
     }
 
     .first-form .first-form-item .first-form-checkbox {

@@ -206,11 +206,21 @@ input:focus {
     opacity: 1;
 }
 
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+
 .popup-pick {
     position: fixed;
     left: 30%;
     right: 30%;
-    top: 10%;
+    top: 5%;
     padding: 2.5em 3.5em;
     border-radius: 10px;
     background: #fff;
@@ -221,6 +231,52 @@ input:focus {
     font-size: 18px;
     font-family: MonsteratBlack, sans-serif;
 }
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #4CAF50;
+}
+
+.step-tab {
+    display: none;
+}
+
+.step-checkbox {
+    margin: 20px auto;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    border: 1px solid #ff9593;
+    background-color: white;
+    color: #ff9593;
+  }
 
 .register-form,
 .login-form {
@@ -358,6 +414,13 @@ input:focus {
     margin: 20px 0;
 }
 
+.form-acc-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .box-acc-popup .acc-rotate {
     transform: rotate(225deg);
 }
@@ -385,26 +448,56 @@ input:focus {
     margin-bottom: 10px;
 }
 
+.step-text input {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid #e2e7e9;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.step-link {
+    margin: 5px 0;
+}
+
+.step-link a{
+    display: inline-block;
+    color: #65d7ed;
+    margin-left: 5px;
+}
+
+.step-tab h4, .first-form-radio {
+    margin: 10px auto;
+}
+
 .form-acc-footer {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
 }
 
-.form-acc-footer .form-acc-button {
+.form-acc-footer .form-acc-button button {
     width: 20%;
-    height: 50px;
+    height: 46px;
     background-color: #ff9593;
     border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
 }
 
 .form-acc-footer .form-acc-footer-steps {
     line-height: 50px;
     color: #969696;
+    display: flex;
+    justify-content: center;
+    width: 20%;
 }
 
 .form-acc-footer .form-acc-footer-steps i {
     margin-left: 10px;
+    align-self: center;
 }
 
 .form-acc-footer .form-acc-button a {
@@ -2506,6 +2599,103 @@ input[type="radio"]:checked+label {
     background-color: #ff9593;
     box-shadow: 2px 3px 16px 0px rgba(255,149,147,0.4);
     border-radius: 24px;
+}
+
+.modal {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.modal.is-visible {
+    visibility: visible;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.modal.is-visible .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.modal-wrapper {
+  position: absolute;
+  z-index: 9999;
+  top: 6em;
+  left: 50%;
+  width: 32em;
+  margin-left: -16em;
+  background-color: #fff;
+  box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+}
+
+.modal-transition {
+  transition: all 0.3s 0.12s;
+  transform: translateY(-10%);
+  opacity: 0;
+}
+
+.modal.is-visible .modal-transition {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-header,
+.modal-content {
+  padding: 1em;
+}
+
+.modal-header {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  color: black;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #777;
+}
+
+.modal-heading {
+  font-size: 1.125em;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modal-content > *:first-child {
+  margin-top: 0;
+}
+
+.modal-content > *:last-child {
+  margin-bottom: 0;
 }
 
 .terapeft-button .terapeft-button-link {
